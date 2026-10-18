@@ -1,0 +1,13 @@
+{
+  "oracle_requested": 1243,
+  "oracle_decoded_successfully": 1243,
+  "end2end_requested": 1243,
+  "end2end_decoded_successfully": 1243,
+  "invalid_token_count": 0,
+  "nan_count": 0,
+  "inf_count": 0,
+  "shape_failure_count": 0,
+  "wrong_feature_dimension_count": 0,
+  "oracle_failures": [],
+  "end2end_failures": []
+}

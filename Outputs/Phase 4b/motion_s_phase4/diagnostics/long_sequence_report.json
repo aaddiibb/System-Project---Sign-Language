@@ -1,0 +1,35 @@
+{
+  "total_samples": 12463,
+  "length_statistics": {
+    "minimum": 24,
+    "mean": 108.14819866805745,
+    "median": 98.0,
+    "p90": 153.0,
+    "p95": 181.0,
+    "p99": 289.3799999999992,
+    "maximum": 1853
+  },
+  "counts": {
+    "T_gt_181": {
+      "count": 606,
+      "percentage": 4.862392682339726
+    },
+    "T_gt_256": {
+      "count": 177,
+      "percentage": 1.4202038032576425
+    },
+    "T_gt_320": {
+      "count": 83,
+      "percentage": 0.6659712749739228
+    },
+    "T_gt_384": {
+      "count": 54,
+      "percentage": 0.4332825162480944
+    },
+    "T_gt_512": {
+      "count": 41,
+      "percentage": 0.3289737623365161
+    }
+  },
+  "phase4b_policy": "debug selection only uses T<=181; no target is truncated"
+}

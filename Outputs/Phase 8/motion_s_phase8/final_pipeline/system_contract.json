@@ -1,0 +1,8 @@
+{
+  "input": "English UTF-8 text",
+  "phase3_output": "non-empty gloss string",
+  "length_output": "integer T bounded [24,469]",
+  "generator_output": "int64 [6,T], IDs 0..511",
+  "decoder_output": "float32 [4T,668], finite",
+  "unresolved": "exact 668-D semantic layout and verified joints/BVH inverse"
+}

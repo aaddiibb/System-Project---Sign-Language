@@ -1,0 +1,21 @@
+{
+  "epoch": 12,
+  "selection_rule": "lexical_token_f1_then_lexical_bleu",
+  "metrics": {
+    "n": 1246.0,
+    "raw_bleu": 0.2135617391534769,
+    "raw_token_precision": 0.5513766485877241,
+    "raw_token_recall": 0.5463496562292709,
+    "raw_token_f1": 0.5439222991179883,
+    "raw_exact_match": 0.1115569823434992,
+    "raw_edit_distance": 2.904494382022472,
+    "raw_normalized_edit_distance": 0.5480154144500051,
+    "lexical_bleu": 0.23801366031521176,
+    "lexical_token_precision": 0.6704034807265143,
+    "lexical_token_recall": 0.6639837031169294,
+    "lexical_token_f1": 0.6610313471814951,
+    "lexical_exact_match": 0.11396468699839486,
+    "lexical_edit_distance": 2.7624398073836276,
+    "lexical_normalized_edit_distance": 0.5158539852781426
+  }
+}

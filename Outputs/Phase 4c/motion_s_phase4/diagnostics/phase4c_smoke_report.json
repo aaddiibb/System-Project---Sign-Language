@@ -1,0 +1,106 @@
+{
+  "phase": "Phase 4C smoke gate",
+  "checks": {
+    "artifact_verification": true,
+    "supported_range_count": true,
+    "t512_positional_capacity": true,
+    "batching_and_masking": true,
+    "one_forward_backward_batch": true,
+    "one_epoch_pipeline": true
+  },
+  "passed": true,
+  "coverage": {
+    "supported_max_t": 512,
+    "policy": "T<=512 supported; T>512 retained by ID and never truncated",
+    "splits": {
+      "train": {
+        "split": "train",
+        "original": 9970,
+        "supported": 9936,
+        "excluded_gt512": 34,
+        "coverage_percentage": 99.65897693079238
+      },
+      "validation": {
+        "split": "validation",
+        "original": 1246,
+        "supported": 1243,
+        "excluded_gt512": 3,
+        "coverage_percentage": 99.75922953451044
+      },
+      "test": {
+        "split": "test",
+        "original": 1247,
+        "supported": 1243,
+        "excluded_gt512": 4,
+        "coverage_percentage": 99.67923015236568
+      }
+    }
+  },
+  "synthetic_t512_decoder_positions": 513,
+  "max_model_positions": 514,
+  "batch_strategy": {
+    "boundaries": [
+      64,
+      96,
+      128,
+      181,
+      256,
+      384,
+      512
+    ],
+    "batch_sizes": [
+      8,
+      8,
+      8,
+      8,
+      4,
+      2,
+      1
+    ],
+    "effective_batch_size": 8
+  },
+  "encoder_cache": {
+    "enabled": false,
+    "policy": "on-the-fly frozen encoding; avoids a large variable-length cache"
+  },
+  "amp_dtype": "torch.bfloat16",
+  "one_batch_loss": 6.595267295837402,
+  "one_batch_grad_norm": 1.9808038473129272,
+  "smoke_epoch": {
+    "train_loss": 6.348002694547176,
+    "train_level_losses": [
+      6.394397482275963,
+      6.198755130171776,
+      6.370344005525112,
+      6.420496553182602,
+      6.3079777136445045,
+      6.396045342087746
+    ],
+    "optimizer_steps": 7,
+    "grad_norm": 0.9718758463859558,
+    "learning_rate": 0.0001,
+    "epoch_seconds": 0.633805513381958,
+    "gpu_peak_memory_gib": 0.42136526107788086
+  },
+  "smoke_validation": {
+    "loss": 6.136311442918154,
+    "level_losses": [
+      6.22499129170255,
+      5.840616149525716,
+      6.139902207141871,
+      6.2527900398534175,
+      6.150427544570944,
+      6.209141424714426
+    ],
+    "overall_accuracy": 0.028819934179595674,
+    "motion_only_accuracy": 0.029082455640952652,
+    "per_level_accuracy": [
+      0.01466854724964739,
+      0.11678420310296192,
+      0.007898448519040903,
+      0.0039492242595204514,
+      0.02172073342736248,
+      0.007898448519040903
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "seed": 42,
+    "kaggle_input": "/kaggle/input",
+    "phase1_root": "/kaggle/input/datasets/adibraian/gpt-first-phase",
+    "phase3_root": "/kaggle/input/datasets/adibraian/phase-3",
+    "phase4a_root": "/kaggle/input/datasets/adibraian/phase-4",
+    "phase4b_root": "/kaggle/input/datasets/adibraian/phase4boutput",
+    "motion_s_train_csv": null,
+    "output_dir": "/kaggle/working/motion_s_phase4",
+    "run_full_training": true,
+    "supported_max_t": 512,
+    "max_model_positions": 514,
+    "max_generation_t": 512,
+    "d_model": 256,
+    "d_level": 64,
+    "num_heads": 8,
+    "decoder_layers": 4,
+    "ffn_dimension": 1024,
+    "dropout": 0.1,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "warmup_ratio": 0.06,
+    "max_epochs": 25,
+    "early_stopping_patience": 4,
+    "effective_batch_size": 8,
+    "bucket_boundaries": [
+      64,
+      96,
+      128,
+      181,
+      256,
+      384,
+      512
+    ],
+    "bucket_batch_sizes": [
+      8,
+      8,
+      8,
+      8,
+      4,
+      2,
+      1
+    ],
+    "num_workers": 0,
+    "pin_memory": true,
+    "smoke_train_samples": 64,
+    "smoke_validation_samples": 32,
+    "cache_encoder_outputs": false
+  },
+  "selection_rule": "maximize oracle validation motion-only accuracy; lower loss breaks ties",
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "resolved_paths": {
+    "phase1": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1",
+    "phase3": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3",
+    "phase4a": "/kaggle/input/datasets/adibraian/phase-4/motion_s_phase4",
+    "phase4b": "/kaggle/input/datasets/adibraian/phase4boutput/motion_s_phase4",
+    "original_motion_s": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "kaggle_input": "/kaggle/input",
+  "phase1_reference": "/kaggle/input/datasets/adibraian/gpt-first-phase",
+  "phase4_reference": null,
+  "motion_s_reference": null,
+  "decoder_reference": null,
+  "output_dir": "/kaggle/working/motion_s_phase5",
+  "random_token_checks": 20,
+  "motion_candidate_limit": 100
+}

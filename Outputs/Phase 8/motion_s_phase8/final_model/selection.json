@@ -1,0 +1,155 @@
+{
+  "policy": {
+    "split": "validation only",
+    "ranking": [
+      "lower collapse",
+      "lower edit distance",
+      "lower feature MAE",
+      "lower repetition",
+      "higher micro accuracy"
+    ],
+    "rejection": {
+      "feature_mae_delta": 0.03,
+      "edit_delta": 0.03,
+      "collapse_delta": 0.05
+    },
+    "fallback": "Phase7 SC-POINT if no fine-tuned model safely improves over continuation control/baseline",
+    "test_used": false
+  },
+  "all_validation_results": {
+    "continue_control": {
+      "token": {
+        "model": "continue_control",
+        "aligned_token_accuracy": 0.16300771007576956,
+        "micro_token_accuracy": 0.15857290807371371,
+        "normalized_token_edit_distance": 0.8305420543277432,
+        "per_level_accuracy": [
+          0.1997856740858383,
+          0.19895304103801587,
+          0.1525877155787185,
+          0.13665975375648567,
+          0.12947443893638838,
+          0.1339768250468356
+        ]
+      },
+      "motion": {
+        "model": "continue_control",
+        "normalized_feature_mae": 0.8320169763419288,
+        "time_normalized_raw_mae": 1.6873949428335469,
+        "velocity_mae": 0.08880962583978907,
+        "motion_variance": 0.47135123000435436,
+        "collapse_rate": 0.5068382944489139,
+        "repetition_score": 0.4761728689003887,
+        "extreme_motion_rate": 0.019308125502815767,
+        "duration_mae_frames": 1.5221238938053097,
+        "signed_duration_bias": 1.5221238938053097
+      },
+      "selected_epoch": 4,
+      "lambda_velocity": 0.0,
+      "lambda_persistence": 0.0
+    },
+    "dynamics": {
+      "token": {
+        "model": "dynamics",
+        "aligned_token_accuracy": 0.16273683891736135,
+        "micro_token_accuracy": 0.15820927357906286,
+        "normalized_token_edit_distance": 0.830781489082586,
+        "per_level_accuracy": [
+          0.19942332451873038,
+          0.19813582712070865,
+          0.1529269364500536,
+          0.13624343723257445,
+          0.12955153458896454,
+          0.13297458156334566
+        ]
+      },
+      "motion": {
+        "model": "dynamics",
+        "normalized_feature_mae": 0.835292038736282,
+        "time_normalized_raw_mae": 1.6939934324038575,
+        "velocity_mae": 0.08861281942764981,
+        "motion_variance": 0.47275293668723034,
+        "collapse_rate": 0.49477071600965405,
+        "repetition_score": 0.4776584104495018,
+        "extreme_motion_rate": 0.015285599356395816,
+        "duration_mae_frames": 1.5221238938053097,
+        "signed_duration_bias": 1.5221238938053097
+      },
+      "selected_epoch": 4,
+      "lambda_velocity": 0.1,
+      "lambda_persistence": 0.0
+    },
+    "dynamics_persistence": {
+      "token": {
+        "model": "dynamics_persistence",
+        "aligned_token_accuracy": 0.1636179540602173,
+        "micro_token_accuracy": 0.15889413995944768,
+        "normalized_token_edit_distance": 0.8295994146289694,
+        "per_level_accuracy": [
+          0.2006491453946912,
+          0.1998858984341873,
+          0.15297319384159927,
+          0.1363744998419539,
+          0.12955153458896454,
+          0.1339305676552899
+        ]
+      },
+      "motion": {
+        "model": "dynamics_persistence",
+        "normalized_feature_mae": 0.8310940798644759,
+        "time_normalized_raw_mae": 1.6816556453704834,
+        "velocity_mae": 0.08844226265171796,
+        "motion_variance": 0.47518573046884977,
+        "collapse_rate": 0.499597747385358,
+        "repetition_score": 0.4744586999170265,
+        "extreme_motion_rate": 0.02252614641995173,
+        "duration_mae_frames": 1.5221238938053097,
+        "signed_duration_bias": 1.5221238938053097
+      },
+      "selected_epoch": 4,
+      "lambda_velocity": 0.1,
+      "lambda_persistence": 0.02
+    },
+    "phase7_sc_point": {
+      "token": {
+        "model": "phase7_sc_point",
+        "aligned_token_accuracy": 0.1611621166067846,
+        "micro_token_accuracy": 0.1562137811048835,
+        "normalized_token_edit_distance": 0.8317264297998294,
+        "per_level_accuracy": [
+          0.19751135233484185,
+          0.19548373667208907,
+          0.1506911625253452,
+          0.13487113461671896,
+          0.12741598501260515,
+          0.13130931546770078
+        ]
+      },
+      "motion": {
+        "model": "phase7_sc_point",
+        "normalized_feature_mae": 0.8327325795891778,
+        "time_normalized_raw_mae": 1.6825248817714682,
+        "velocity_mae": 0.08856991489964057,
+        "motion_variance": 0.4685517310398164,
+        "collapse_rate": 0.50201126307321,
+        "repetition_score": 0.472654290607577,
+        "extreme_motion_rate": 0.02252614641995173,
+        "duration_mae_frames": 1.5221238938053097,
+        "signed_duration_bias": 1.5221238938053097
+      },
+      "selected_epoch": 0,
+      "lambda_velocity": 0.0,
+      "lambda_persistence": 0.0
+    }
+  },
+  "acceptable_models": [
+    "continue_control",
+    "dynamics",
+    "dynamics_persistence",
+    "phase7_sc_point"
+  ],
+  "best_auxiliary": "dynamics",
+  "auxiliary_beats_control": true,
+  "selected": "dynamics",
+  "rationale": "predeclared validation-only safe lexicographic policy with locked Phase-7 fallback when auxiliary losses fail to beat continuation control"
+}

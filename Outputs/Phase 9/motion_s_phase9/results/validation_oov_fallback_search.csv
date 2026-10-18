@@ -1,0 +1,5 @@
+semantic_threshold,fallback,micro_token_accuracy,normalized_token_edit_distance,samples
+0.6,"meaning>=threshold, else spelling",0.24887466666666666,0.6198557035140884,133
+0.7,"meaning>=threshold, else spelling",0.246336,0.622062507798736,133
+0.5,"meaning>=threshold, else spelling",0.24247466666666667,0.6240083250332414,133
+,spelling,0.233504,0.6354530450340663,133

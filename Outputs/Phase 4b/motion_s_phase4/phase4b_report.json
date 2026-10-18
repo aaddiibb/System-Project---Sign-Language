@@ -1,0 +1,80 @@
+{
+  "phase": "Phase 4B - Motion Model Debug / Overfit",
+  "phase4b_complete": true,
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "representation": {
+    "shape": "[L,T]",
+    "rvq_levels": 6,
+    "codebook_sizes": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "level_order": [
+      "base_tokens",
+      "residual_1",
+      "residual_2",
+      "residual_3",
+      "residual_4",
+      "residual_5"
+    ]
+  },
+  "special_tokens": {
+    "pad": 512,
+    "bos": 513,
+    "eos": 514
+  },
+  "model": {
+    "gloss_encoder": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/best_model",
+    "encoder_frozen": true,
+    "d_model": 256,
+    "d_level": 64,
+    "heads": 8,
+    "decoder_layers": 4,
+    "parameters_total": 40897938,
+    "parameters_trainable": 5567122
+  },
+  "debug_samples": 32,
+  "initial_loss": 6.557528138160706,
+  "final_loss": 0.015617680037394166,
+  "loss_reduction": 0.9976183586698608,
+  "teacher_forced": {
+    "overall_accuracy": 0.9998450573287884,
+    "motion_only_accuracy": 0.9998435054773083,
+    "per_level_accuracy": [
+      1.0,
+      1.0,
+      0.9996901146575767,
+      1.0,
+      0.9996901146575767,
+      0.9996901146575767
+    ],
+    "first_step_accuracy": 0.984375
+  },
+  "autoregressive": {
+    "aligned_token_accuracy": 0.9896680216802168,
+    "micro_aligned_token_accuracy": 0.9870364467112953,
+    "per_level_prefix_accuracy": [
+      0.9961746891934969,
+      0.9929869301880778,
+      0.9885240675804909,
+      0.9837424290723621,
+      0.9824673254701944,
+      0.9783232387631495
+    ],
+    "length_mae": 1.8125,
+    "normalized_token_edit_distance": 0.016804788213627995,
+    "exact_sequence_match": 0.96875,
+    "eos_success_rate": 1.0,
+    "unique_generated_16_token_prefixes": 27,
+    "modal_generated_prefix_rate": 0.09375
+  },
+  "generated_token_validity": {
+    "invalid_id_rate": 0.0
+  },
+  "checkpoint_reload_verified": true,
+  "ready_for_full_training": true
+}

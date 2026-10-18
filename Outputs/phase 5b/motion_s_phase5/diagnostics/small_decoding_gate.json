@@ -1,0 +1,255 @@
+{
+  "samples": [
+    {
+      "sample_id": "1002815",
+      "oracle_token_shape": [
+        6,
+        246
+      ],
+      "end2end_token_shape": [
+        6,
+        273
+      ],
+      "ground_truth_shape": [
+        479,
+        668
+      ],
+      "oracle_decoded_shape": [
+        984,
+        668
+      ],
+      "end2end_decoded_shape": [
+        1092,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1012610",
+      "oracle_token_shape": [
+        6,
+        84
+      ],
+      "end2end_token_shape": [
+        6,
+        165
+      ],
+      "ground_truth_shape": [
+        290,
+        668
+      ],
+      "oracle_decoded_shape": [
+        336,
+        668
+      ],
+      "end2end_decoded_shape": [
+        660,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1042390",
+      "oracle_token_shape": [
+        6,
+        131
+      ],
+      "end2end_token_shape": [
+        6,
+        115
+      ],
+      "ground_truth_shape": [
+        392,
+        668
+      ],
+      "oracle_decoded_shape": [
+        524,
+        668
+      ],
+      "end2end_decoded_shape": [
+        460,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1043822",
+      "oracle_token_shape": [
+        6,
+        176
+      ],
+      "end2end_token_shape": [
+        6,
+        196
+      ],
+      "ground_truth_shape": [
+        628,
+        668
+      ],
+      "oracle_decoded_shape": [
+        704,
+        668
+      ],
+      "end2end_decoded_shape": [
+        784,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1053700",
+      "oracle_token_shape": [
+        6,
+        121
+      ],
+      "end2end_token_shape": [
+        6,
+        147
+      ],
+      "ground_truth_shape": [
+        320,
+        668
+      ],
+      "oracle_decoded_shape": [
+        484,
+        668
+      ],
+      "end2end_decoded_shape": [
+        588,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1053704",
+      "oracle_token_shape": [
+        6,
+        512
+      ],
+      "end2end_token_shape": [
+        6,
+        105
+      ],
+      "ground_truth_shape": [
+        491,
+        668
+      ],
+      "oracle_decoded_shape": [
+        2048,
+        668
+      ],
+      "end2end_decoded_shape": [
+        420,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1115757",
+      "oracle_token_shape": [
+        6,
+        512
+      ],
+      "end2end_token_shape": [
+        6,
+        512
+      ],
+      "ground_truth_shape": [
+        865,
+        668
+      ],
+      "oracle_decoded_shape": [
+        2048,
+        668
+      ],
+      "end2end_decoded_shape": [
+        2048,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1120641",
+      "oracle_token_shape": [
+        6,
+        301
+      ],
+      "end2end_token_shape": [
+        6,
+        136
+      ],
+      "ground_truth_shape": [
+        426,
+        668
+      ],
+      "oracle_decoded_shape": [
+        1204,
+        668
+      ],
+      "end2end_decoded_shape": [
+        544,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1120860",
+      "oracle_token_shape": [
+        6,
+        103
+      ],
+      "end2end_token_shape": [
+        6,
+        205
+      ],
+      "ground_truth_shape": [
+        310,
+        668
+      ],
+      "oracle_decoded_shape": [
+        412,
+        668
+      ],
+      "end2end_decoded_shape": [
+        820,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    },
+    {
+      "sample_id": "1121359",
+      "oracle_token_shape": [
+        6,
+        360
+      ],
+      "end2end_token_shape": [
+        6,
+        360
+      ],
+      "ground_truth_shape": [
+        305,
+        668
+      ],
+      "oracle_decoded_shape": [
+        1440,
+        668
+      ],
+      "end2end_decoded_shape": [
+        1440,
+        668
+      ],
+      "oracle_finite": true,
+      "end2end_finite": true
+    }
+  ],
+  "passed": true
+}

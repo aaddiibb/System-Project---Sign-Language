@@ -1,0 +1,14 @@
+{
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "phase1": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1",
+  "phase3": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3",
+  "phase4": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4",
+  "phase5b": "/kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5",
+  "phase5c": "/kaggle/input/datasets/adibraian/phase-5coutput/motion_s_phase5c",
+  "official_train_csv": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv",
+  "motion_features": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Motion-Features",
+  "rvq_checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+  "rvq_checkpoint_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "phase4_checkpoint_sha256": "b01d4f6db3c377b368d6fff658b28cdc153fb5d18acfd256ae5f84935ce558ee",
+  "passed": true
+}

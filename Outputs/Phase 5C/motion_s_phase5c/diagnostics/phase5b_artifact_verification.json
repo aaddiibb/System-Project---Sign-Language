@@ -1,0 +1,10 @@
+{
+  "phase5b_root": "/kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5",
+  "oracle_samples": 1243,
+  "end2end_samples": 1243,
+  "motion_dim": 668,
+  "temporal_upsampling_factor": 4,
+  "all_finite": true,
+  "motions_modified": false,
+  "passed": true
+}

@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "kaggle_input": "/kaggle/input",
+  "kaggle_working": "/kaggle/working",
+  "output_dir": "/kaggle/working/motion_s_phase5",
+  "expected_test_samples": 1243,
+  "small_gate_samples": 10,
+  "qualitative_per_band": 5,
+  "trajectory_feature_count": 4,
+  "near_zero_std": 1e-06,
+  "resolved_paths": {
+    "oracle_tokens": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_oracle_tokens.npz",
+    "end2end_tokens": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_end2end_tokens.npz",
+    "decoder_contract": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/decoder_contract.json",
+    "motion_mean": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "motion_std": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+    "motion_features": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Motion-Features"
+  }
+}

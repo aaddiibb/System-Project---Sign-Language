@@ -1,0 +1,17 @@
+{
+  "batch_id": 4,
+  "total_videos": 1373,
+  "processed": 1373,
+  "succeeded": 1373,
+  "failed": 0,
+  "skipped": 0,
+  "total_frames": 238710,
+  "avg_frames": 173.86016023306627,
+  "avg_pose_detection_rate": 1.0,
+  "avg_hand_detection_rate": 0.9970363586158701,
+  "processing_time_seconds": 17307.950417757034,
+  "median_frames": 171.0,
+  "min_frames": 107,
+  "max_frames": 291,
+  "processing_time_hours": 4.807764004932509
+}

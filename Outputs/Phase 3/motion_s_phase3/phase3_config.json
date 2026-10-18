@@ -1,0 +1,61 @@
+{
+  "phase": 3,
+  "task": "English text to sign gloss sequence-to-sequence generation",
+  "config": {
+    "seed": 42,
+    "kaggle_input": "/kaggle/input",
+    "phase1_root": null,
+    "output_dir": "/kaggle/working/motion_s_phase3",
+    "model_name": "t5-small",
+    "model_path": null,
+    "prefix": "text to gloss: ",
+    "length_coverage": 0.995,
+    "input_length_cap": 256,
+    "target_length_cap": 128,
+    "debug_samples": 32,
+    "debug_epochs": 30,
+    "debug_batch_size": 8,
+    "debug_learning_rate": 0.0005,
+    "debug_min_loss_reduction": 0.5,
+    "debug_min_token_f1": 0.7,
+    "epochs": 12,
+    "train_batch_size": 8,
+    "eval_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.08,
+    "max_grad_norm": 1.0,
+    "early_stopping_patience": 3,
+    "num_workers": 2,
+    "beam_width": 4
+  },
+  "phase1_root": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1",
+  "phase1_split_fingerprint_sha256": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "columns": {
+    "id": "id",
+    "sentence": "sentence",
+    "gloss": "gloss"
+  },
+  "split_sizes": {
+    "train": 9970,
+    "validation": 1246,
+    "test": 1247
+  },
+  "training_rows_after_explicit_unusable_exclusion": 9970,
+  "offline_model_source": "/kaggle/input/models/hritik619916/t5-small/tensorflow2/default/1",
+  "model_type": "t5",
+  "parameter_count": 60506624,
+  "package_versions": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.0.0",
+    "tokenizers": "0.22.2",
+    "pandas": "2.3.3",
+    "numpy": "2.0.2",
+    "nltk": "3.9.1"
+  },
+  "device": "cuda",
+  "max_input_length": 34,
+  "max_target_length": 43,
+  "selected_decoding": "beam_4"
+}

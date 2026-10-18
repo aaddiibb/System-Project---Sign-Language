@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "kaggle_input": "/kaggle/input",
+  "output_dir": "/kaggle/working/motion_s_phase5",
+  "reconstruction_samples": 20,
+  "near_zero_std": 1e-06,
+  "sanity_max_mean_mae": 1.0,
+  "sanity_max_mean_mse": 4.0,
+  "sanity_min_mean_correlation": 0.98,
+  "resolved_train_csv": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv",
+  "resolved_motion_features": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Motion-Features",
+  "resolved_checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth"
+}

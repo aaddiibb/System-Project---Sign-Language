@@ -1,0 +1,109 @@
+{
+  "phase": "Phase 5A - Verified RVQ Decoder Recovery",
+  "phase5a_complete": true,
+  "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+  "checkpoint_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "checkpoint_config": {
+    "input_dim": 668,
+    "output_dim": 668,
+    "hidden_dim": 512,
+    "latent_dim": 256,
+    "num_quantizers": 6,
+    "num_embeddings": 512,
+    "downsampling_ratio": 4
+  },
+  "token_representation": {
+    "shape": "[6,T]",
+    "levels": 6,
+    "num_quantizers": 6,
+    "valid_ids": [
+      0,
+      511
+    ],
+    "codebook_size": 512,
+    "num_embeddings": 512,
+    "latent_dim": 256
+  },
+  "motion_representation": {
+    "shape": "[T,668]",
+    "feature_dim": 668,
+    "motion_dim": 668,
+    "temporal_upsampling_factor": 4,
+    "temporal_expansion": 4
+  },
+  "decoder": {
+    "architecture": "Candidate B",
+    "strict_load": true,
+    "hidden_dim": 512,
+    "layers": [
+      {
+        "type": "ConvTranspose1d",
+        "in": 256,
+        "out": 512,
+        "kernel": 3,
+        "stride": 2,
+        "padding": 1,
+        "output_padding": 1
+      },
+      {
+        "type": "ConvTranspose1d",
+        "in": 512,
+        "out": 512,
+        "kernel": 3,
+        "stride": 2,
+        "padding": 1,
+        "output_padding": 1
+      },
+      {
+        "type": "ConvTranspose1d",
+        "in": 512,
+        "out": 512,
+        "kernel": 3,
+        "stride": 1,
+        "padding": 1,
+        "output_padding": 0
+      },
+      {
+        "type": "ConvTranspose1d",
+        "in": 512,
+        "out": 668,
+        "kernel": 3,
+        "stride": 1,
+        "padding": 1,
+        "output_padding": 0
+      }
+    ]
+  },
+  "codebooks": {
+    "verified": true,
+    "count": 6,
+    "shape_each": [
+      256,
+      512
+    ]
+  },
+  "normalization": {
+    "type": "empirically recovered per-feature z-score",
+    "official_statistics_confirmed": false,
+    "mean_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "std_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "feature_dim": 668,
+    "files_used": 12463,
+    "total_frames": 5372828,
+    "near_constant_dimensions": 159
+  },
+  "reconstruction_test": {
+    "samples": 20,
+    "mean_mae": 0.5031887752016406,
+    "mean_mse": 1.6717892615917092,
+    "mean_rmse": 1.270849883167633,
+    "mean_correlation": 0.9992479266503352,
+    "nan_failures": 0,
+    "inf_failures": 0,
+    "all_finite": true,
+    "quality_sanity_pass": true
+  },
+  "ground_truth_trim_policy": "Trim only padded decoder tail to known original frame count.",
+  "generated_motion_trim_policy": "Do not trim generated motion.",
+  "ready_for_phase5b": true
+}

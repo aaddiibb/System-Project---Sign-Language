@@ -1,0 +1,7 @@
+{
+  "input": "English UTF-8 text (or gloss string)",
+  "phase3_output": "gloss string",
+  "synthesizer_output": "int64 [6,T], IDs 0..511, T from the duration lexicon",
+  "decoder_output": "float32 [4T,668], finite, junction-smoothed (radius 1)",
+  "rebuild": "ConcatSynth(glosses, tokens, **config) from concat_synth_state.pkl"
+}

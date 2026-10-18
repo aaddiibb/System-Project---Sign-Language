@@ -1,0 +1,88 @@
+{
+  "phase6_report_values": {
+    "aligned": 0.14404817921150082,
+    "feature": 0.8565560670274878,
+    "collapse": 0.5108608205953339
+  },
+  "reference_values": {
+    "aligned": 0.144048,
+    "feature": 0.856556,
+    "collapse": 0.510861
+  },
+  "report_compatible": true,
+  "phase4_checkpoint_sha256": "b01d4f6db3c377b368d6fff658b28cdc153fb5d18acfd256ae5f84935ce558ee",
+  "phase6_recorded_phase4_sha256": "b01d4f6db3c377b368d6fff658b28cdc153fb5d18acfd256ae5f84935ce558ee",
+  "checkpoint_identity": true,
+  "passed": true,
+  "reproduction_split": "validation",
+  "deterministic_subset_ids": [
+    "474599",
+    "1909439",
+    "6029374",
+    "6238122",
+    "6662862",
+    "3907054",
+    "5748013",
+    "3259818",
+    "3824972",
+    "1553058",
+    "59167",
+    "6246256",
+    "3917405",
+    "508797",
+    "3909145",
+    "3590844",
+    "3200630",
+    "4700000",
+    "2361819",
+    "6241744",
+    "35947",
+    "731335",
+    "6374257",
+    "5790026"
+  ],
+  "reloaded_oracle_length_subset": {
+    "model": "reloaded_phase4",
+    "aligned_token_accuracy": 0.1808000346602574,
+    "micro_token_accuracy": 0.15852293920179036,
+    "normalized_token_edit_distance": 0.8071625554490586,
+    "per_level_accuracy": [
+      0.195822454308094,
+      0.19843342036553524,
+      0.1514360313315927,
+      0.13838120104438642,
+      0.13838120104438642,
+      0.1286833271167475
+    ]
+  },
+  "saved_phase6_oracle_subset": {
+    "model": "saved_phase6_oracle",
+    "aligned_token_accuracy": 0.1808000346602574,
+    "micro_token_accuracy": 0.15852293920179036,
+    "normalized_token_edit_distance": 0.8071625554490586,
+    "per_level_accuracy": [
+      0.195822454308094,
+      0.19843342036553524,
+      0.1514360313315927,
+      0.13838120104438642,
+      0.13838120104438642,
+      0.1286833271167475
+    ]
+  },
+  "saved_phase6_predicted_length_end2end_subset": {
+    "model": "saved_phase6_end2end",
+    "aligned_token_accuracy": 0.15493418059877628,
+    "micro_token_accuracy": 0.1541508238276299,
+    "normalized_token_edit_distance": 0.8481493381163064,
+    "per_level_accuracy": [
+      0.18963878326996197,
+      0.20627376425855512,
+      0.1444866920152091,
+      0.12452471482889733,
+      0.13070342205323193,
+      0.12927756653992395
+    ]
+  },
+  "subset_compatible": true,
+  "all_regenerated_ids_valid": true
+}

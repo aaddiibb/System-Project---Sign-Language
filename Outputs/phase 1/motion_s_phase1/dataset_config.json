@@ -1,0 +1,83 @@
+{
+  "project": "Motion-S Text-to-Sign",
+  "seed": 42,
+  "phase1_output_version": "v1",
+  "source_dataset_root_name": "motion-s-hierarchical-text-to-motion-generation-for-sign-language",
+  "source_dataset_root_runtime": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language",
+  "portable_paths_are_relative_to_source_root": true,
+  "id_column": "id",
+  "sentence_column": "sentence",
+  "gloss_column": "gloss",
+  "bvh_source_column": "bvh_path",
+  "bvh_relative_path_column": "bvh_relative_path",
+  "motion_feature_relative_path_column": "motion_feature_relative_path",
+  "motion_token_columns": [
+    "base_tokens",
+    "residual_1",
+    "residual_2",
+    "residual_3",
+    "residual_4",
+    "residual_5"
+  ],
+  "motion_token_serialization": "JSON integer array per RVQ-level CSV cell",
+  "train_size": 9970,
+  "val_size": 1246,
+  "test_size": 1247,
+  "original_annotated_samples": 12467,
+  "usable_samples": 12463,
+  "quarantined_sample_ids": [
+    "1361291",
+    "25980",
+    "32734",
+    "4808283"
+  ],
+  "motion_feature_dim": 668,
+  "motion_feature_dtype": "float64",
+  "rvq_levels": 6,
+  "codebook_size": null,
+  "observed_token_ranges": [
+    {
+      "level": 0,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 419
+    },
+    {
+      "level": 1,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 492
+    },
+    {
+      "level": 2,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 498
+    },
+    {
+      "level": 3,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 489
+    },
+    {
+      "level": 4,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 443
+    },
+    {
+      "level": 5,
+      "min_id": 0,
+      "max_id": 511,
+      "observed_vocabulary": 391
+    }
+  ],
+  "special_token_ids": null,
+  "bvh_extension": ".bvh",
+  "motion_feature_extension": ".npy",
+  "rvq_checkpoint_attached": true,
+  "rvq_checkpoint_required_for_phase2_retrieval": false,
+  "rvq_checkpoint_required_before_decoding": true,
+  "split_fingerprint_sha256": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d"
+}

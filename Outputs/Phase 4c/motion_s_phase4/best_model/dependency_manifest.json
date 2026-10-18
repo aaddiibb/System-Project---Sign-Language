@@ -1,0 +1,8 @@
+{
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "phase3_encoder_path": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/best_model",
+  "phase3_tokenizer_path": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/tokenizer",
+  "phase3_model_config_sha256": "19d0cb630d1fc250df46f81009f6bb6040469b0d15899eeb299a6ac7c88bb423",
+  "phase3_tokenizer_config_sha256": "1e4193fa87a97b848742f2ffb63b3f253dd4c28725164ded3a4babc2aeb1782b",
+  "checkpoint_contents": "all trainable Phase-4 state except frozen gloss_encoder.*"
+}

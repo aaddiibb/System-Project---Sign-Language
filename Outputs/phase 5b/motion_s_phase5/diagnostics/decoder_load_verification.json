@@ -1,0 +1,39 @@
+{
+  "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+  "checkpoint_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "decoder_candidate": "Candidate B",
+  "strict_load": true,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "codebook_shapes": [
+    [
+      256,
+      512
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      256,
+      512
+    ]
+  ],
+  "motion_dim": 668,
+  "temporal_expansion": 4,
+  "normalization": "empirically recovered Motion-S feature normalization",
+  "official_statistics_confirmed": false,
+  "active_dimensions": 509
+}

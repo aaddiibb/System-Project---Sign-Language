@@ -1,0 +1,13 @@
+{
+  "phase1_ids_missing_from_original_source": 0,
+  "gloss_mismatches": 0,
+  "motion_token_mismatches": 0,
+  "original_source_parse_errors": 0,
+  "all_rows_aligned": true,
+  "mismatch_previews": {
+    "missing_ids": [],
+    "gloss": [],
+    "tokens": [],
+    "parse_errors": []
+  }
+}

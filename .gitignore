@@ -1,0 +1,28 @@
+# Local Python environments and caches
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Generated numerical datasets and intermediate tensors
+*.npy
+
+# Downloaded archives and dataset bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Trained model checkpoints and serialized pipeline state
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+
+# Local OS/editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,6 @@
+sample_id,status,original_bvh,recovered_motion,passed
+1002815,NOT_RUN_NO_VERIFIED_CONVERTER,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1002815/1002815.bvh,,False
+1012610,NOT_RUN_NO_VERIFIED_CONVERTER,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1012610/1012610.bvh,,False
+1042390,NOT_RUN_NO_VERIFIED_CONVERTER,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1042390/1042390.bvh,,False
+1043822,NOT_RUN_NO_VERIFIED_CONVERTER,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1043822/1043822.bvh,,False
+1053700,NOT_RUN_NO_VERIFIED_CONVERTER,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1053700/1053700.bvh,,False

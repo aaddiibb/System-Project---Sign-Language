@@ -1,0 +1,17 @@
+{
+  "split": "validation only",
+  "ranking": [
+    "lower collapse",
+    "lower edit distance",
+    "lower feature MAE",
+    "lower repetition",
+    "higher micro accuracy"
+  ],
+  "rejection": {
+    "feature_mae_delta": 0.03,
+    "edit_delta": 0.03,
+    "collapse_delta": 0.05
+  },
+  "fallback": "Phase7 SC-POINT if no fine-tuned model safely improves over continuation control/baseline",
+  "test_used": false
+}

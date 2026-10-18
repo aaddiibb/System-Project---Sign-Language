@@ -1,0 +1,712 @@
+{
+  "phase": "Phase 4A - Token Representation and Data Alignment",
+  "phase1_split_fingerprint_sha256": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "split_sizes": {
+    "train": 9970,
+    "validation": 1246,
+    "test": 1247
+  },
+  "split_id_intersections": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "phase3_root": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3",
+  "phase3_joins": {
+    "validation": true,
+    "test": true
+  },
+  "motion_token_representation": {
+    "source": {
+      "original_file": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv",
+      "phase1_portable_files": {
+        "train": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1/splits/train_split.csv",
+        "validation": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1/splits/val_split.csv",
+        "test": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1/splits/test_split.csv"
+      },
+      "serialization": "JSON integer array per RVQ-level CSV cell",
+      "provider_column_order": [
+        "base_tokens",
+        "residual_1",
+        "residual_2",
+        "residual_3",
+        "residual_4",
+        "residual_5"
+      ],
+      "phase1_declared_rvq_levels": 6,
+      "canonicalization_rule": "one 1-D CSV column per level; stack in provider order to [L,T]",
+      "flattening_used": false,
+      "official_rvq_declaration": {
+        "provider": "Signvrse",
+        "model": "Motion-S-RVQ-VAE-Tokenizer",
+        "source_url": "https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "num_quantizers": 6,
+        "num_embeddings_per_quantizer": 512,
+        "valid_token_id_range": [
+          0,
+          511
+        ]
+      }
+    },
+    "shape_convention": "[L,T]",
+    "rvq_levels": 6,
+    "level_order": [
+      "base_tokens",
+      "residual_1",
+      "residual_2",
+      "residual_3",
+      "residual_4",
+      "residual_5"
+    ],
+    "level_order_semantics": "base-named level followed by residual-named levels in Phase-1 provider-column order; distinct coarse/fine meanings are not independently asserted",
+    "hierarchy_documentation_status": "ordering is documented by provider column names and Phase-1 export; level meanings beyond base/residual remain unclaimed",
+    "all_levels_equal_temporal_length": true,
+    "zero_based": true,
+    "codebook_sizes": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+    "sequence_length_statistics": {
+      "minimum": 24,
+      "mean": 108.14819866805745,
+      "median": 98.0,
+      "p90": 153.0,
+      "p95": 181.0,
+      "p99": 289.3799999999992,
+      "maximum": 1853
+    },
+    "gloss_vs_motion_length_pearson": 0.8865308767048622,
+    "gloss_vs_motion_length_spearman": 0.809971217379963,
+    "per_level": [
+      {
+        "level": 0,
+        "column": "base_tokens",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 419,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 81.8359375,
+        "most_frequent_10": [
+          [
+            171,
+            41400
+          ],
+          [
+            299,
+            39916
+          ],
+          [
+            312,
+            35869
+          ],
+          [
+            95,
+            29533
+          ],
+          [
+            174,
+            21695
+          ],
+          [
+            139,
+            19125
+          ],
+          [
+            360,
+            17949
+          ],
+          [
+            376,
+            17794
+          ],
+          [
+            50,
+            14412
+          ],
+          [
+            225,
+            13149
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            14,
+            1
+          ],
+          [
+            175,
+            1
+          ],
+          [
+            184,
+            1
+          ],
+          [
+            297,
+            1
+          ],
+          [
+            399,
+            1
+          ],
+          [
+            405,
+            1
+          ],
+          [
+            428,
+            1
+          ],
+          [
+            443,
+            1
+          ],
+          [
+            487,
+            1
+          ],
+          [
+            502,
+            1
+          ]
+        ]
+      },
+      {
+        "level": 1,
+        "column": "residual_1",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 492,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 96.09375,
+        "most_frequent_10": [
+          [
+            87,
+            144849
+          ],
+          [
+            333,
+            76692
+          ],
+          [
+            9,
+            49053
+          ],
+          [
+            88,
+            37503
+          ],
+          [
+            46,
+            29104
+          ],
+          [
+            79,
+            28927
+          ],
+          [
+            325,
+            24285
+          ],
+          [
+            258,
+            22599
+          ],
+          [
+            97,
+            22296
+          ],
+          [
+            35,
+            21992
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            14,
+            1
+          ],
+          [
+            151,
+            1
+          ],
+          [
+            226,
+            1
+          ],
+          [
+            407,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            411,
+            1
+          ],
+          [
+            25,
+            2
+          ],
+          [
+            45,
+            2
+          ],
+          [
+            140,
+            2
+          ],
+          [
+            202,
+            2
+          ]
+        ]
+      },
+      {
+        "level": 2,
+        "column": "residual_2",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 498,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 97.265625,
+        "most_frequent_10": [
+          [
+            197,
+            40312
+          ],
+          [
+            202,
+            36400
+          ],
+          [
+            332,
+            28779
+          ],
+          [
+            446,
+            24830
+          ],
+          [
+            321,
+            24113
+          ],
+          [
+            286,
+            24013
+          ],
+          [
+            11,
+            22463
+          ],
+          [
+            183,
+            22212
+          ],
+          [
+            58,
+            21780
+          ],
+          [
+            460,
+            21608
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            5,
+            1
+          ],
+          [
+            78,
+            1
+          ],
+          [
+            115,
+            1
+          ],
+          [
+            311,
+            1
+          ],
+          [
+            147,
+            2
+          ],
+          [
+            261,
+            2
+          ],
+          [
+            270,
+            2
+          ],
+          [
+            492,
+            2
+          ],
+          [
+            95,
+            4
+          ],
+          [
+            399,
+            4
+          ]
+        ]
+      },
+      {
+        "level": 3,
+        "column": "residual_3",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 489,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 95.5078125,
+        "most_frequent_10": [
+          [
+            503,
+            40301
+          ],
+          [
+            236,
+            29570
+          ],
+          [
+            308,
+            25868
+          ],
+          [
+            114,
+            22065
+          ],
+          [
+            130,
+            21601
+          ],
+          [
+            498,
+            21514
+          ],
+          [
+            457,
+            20878
+          ],
+          [
+            191,
+            20780
+          ],
+          [
+            401,
+            18346
+          ],
+          [
+            395,
+            18140
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            5,
+            1
+          ],
+          [
+            38,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            74,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            455,
+            1
+          ],
+          [
+            490,
+            1
+          ],
+          [
+            345,
+            2
+          ],
+          [
+            398,
+            4
+          ],
+          [
+            162,
+            5
+          ]
+        ]
+      },
+      {
+        "level": 4,
+        "column": "residual_4",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 443,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 86.5234375,
+        "most_frequent_10": [
+          [
+            71,
+            48972
+          ],
+          [
+            467,
+            45785
+          ],
+          [
+            498,
+            45331
+          ],
+          [
+            456,
+            21541
+          ],
+          [
+            186,
+            19644
+          ],
+          [
+            138,
+            16125
+          ],
+          [
+            501,
+            16016
+          ],
+          [
+            316,
+            15930
+          ],
+          [
+            424,
+            15062
+          ],
+          [
+            353,
+            15049
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            45,
+            1
+          ],
+          [
+            88,
+            1
+          ],
+          [
+            124,
+            1
+          ],
+          [
+            481,
+            1
+          ],
+          [
+            130,
+            2
+          ],
+          [
+            507,
+            4
+          ],
+          [
+            98,
+            5
+          ],
+          [
+            278,
+            5
+          ],
+          [
+            200,
+            7
+          ],
+          [
+            41,
+            9
+          ]
+        ]
+      },
+      {
+        "level": 5,
+        "column": "residual_5",
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_unique_ids": 391,
+        "observed_ids_contiguous_from_zero": false,
+        "observed_minimum_codebook_size": 512,
+        "resolved_codebook_size": 512,
+        "codebook_resolution_source": "official Signvrse provider declaration recorded in Phase4Config: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+        "codebook_utilization_percent": 76.3671875,
+        "most_frequent_10": [
+          [
+            367,
+            88403
+          ],
+          [
+            350,
+            32496
+          ],
+          [
+            241,
+            30562
+          ],
+          [
+            168,
+            24428
+          ],
+          [
+            409,
+            18679
+          ],
+          [
+            437,
+            18281
+          ],
+          [
+            38,
+            16256
+          ],
+          [
+            186,
+            14532
+          ],
+          [
+            428,
+            13422
+          ],
+          [
+            122,
+            13373
+          ]
+        ],
+        "least_frequent_10": [
+          [
+            74,
+            1
+          ],
+          [
+            105,
+            1
+          ],
+          [
+            175,
+            1
+          ],
+          [
+            268,
+            1
+          ],
+          [
+            432,
+            1
+          ],
+          [
+            479,
+            1
+          ],
+          [
+            130,
+            2
+          ],
+          [
+            18,
+            3
+          ],
+          [
+            89,
+            3
+          ],
+          [
+            229,
+            4
+          ]
+        ]
+      }
+    ],
+    "special_tokens": {
+      "provider_declared_special_token_ids": null,
+      "negative_ids_observed": 0,
+      "pad_bos_eos_present_in_targets": "not declared; no out-of-range IDs observed",
+      "phase4_model_special_tokens_allocated": false,
+      "note": "PAD/BOS/EOS allocation is deferred to Phase 4B and must start at/above each exact codebook size."
+    }
+  },
+  "token_integrity": {
+    "total_samples": 12463,
+    "valid": 12463,
+    "fully_valid_with_exact_codebook": 12463,
+    "missing": 0,
+    "empty": 0,
+    "nan_or_inf": 0,
+    "malformed": 0,
+    "shape_mismatches": 0,
+    "length_metadata_mismatches": 0,
+    "invalid_ids": 0
+  },
+  "original_source_alignment": {
+    "phase1_ids_missing_from_original_source": 0,
+    "gloss_mismatches": 0,
+    "motion_token_mismatches": 0,
+    "original_source_parse_errors": 0,
+    "all_rows_aligned": true,
+    "mismatch_previews": {
+      "missing_ids": [],
+      "gloss": [],
+      "tokens": [],
+      "parse_errors": []
+    }
+  },
+  "checks": {
+    "phase1_fingerprint": true,
+    "split_counts": true,
+    "split_ids_disjoint": true,
+    "phase3_validation_join": true,
+    "phase3_test_join": true,
+    "all_token_rows_parse": true,
+    "rvq_level_count_consistent": true,
+    "all_levels_share_temporal_length": true,
+    "phase1_length_metadata_matches": true,
+    "exact_codebook_sizes_resolved": true,
+    "no_invalid_codebook_ids": true,
+    "original_motion_s_alignment": true
+  },
+  "ready_to_build_motion_model": true,
+  "next_phase_allowed": "Phase 4B - Model + 32-sample overfit test"
+}

@@ -1,0 +1,68 @@
+{
+  "sample_ids": [
+    "263350",
+    "3721935",
+    "1566383",
+    "8532486"
+  ],
+  "epochs": 300,
+  "initial_teacher_forced": {
+    "loss": 6.580828666687012,
+    "level_losses": [
+      6.733278751373291,
+      6.526162147521973,
+      6.628315448760986,
+      6.506748199462891,
+      6.605053424835205,
+      6.48541259765625
+    ],
+    "overall_accuracy": 0.0018165304268846503,
+    "motion_only_accuracy": 0.0018365472910927456,
+    "per_level_accuracy": [
+      0.0,
+      0.0,
+      0.005449591280653951,
+      0.0027247956403269754,
+      0.0,
+      0.0027247956403269754
+    ],
+    "first_step_accuracy": 0.0
+  },
+  "final_teacher_forced": {
+    "loss": 0.014751046895980835,
+    "level_losses": [
+      0.014634997583925724,
+      0.01421048492193222,
+      0.014804632402956486,
+      0.014889823272824287,
+      0.015112094581127167,
+      0.014854254201054573
+    ],
+    "overall_accuracy": 1.0,
+    "motion_only_accuracy": 1.0,
+    "per_level_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "first_step_accuracy": 1.0
+  },
+  "loss_reduction": 0.9977584818503705,
+  "autoregressive": {
+    "aligned_token_accuracy": 1.0,
+    "eos_success_rate": 1.0,
+    "length_mae": 0.0,
+    "invalid_id_rate": 0.0
+  },
+  "thresholds": {
+    "loss_reduction": 0.95,
+    "teacher_accuracy": 0.98,
+    "first_step_accuracy": 0.95,
+    "autoregressive_aligned_accuracy": 0.7,
+    "eos_success_rate": 0.75
+  },
+  "passed": true
+}

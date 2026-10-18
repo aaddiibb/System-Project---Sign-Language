@@ -1,0 +1,10 @@
+{
+  "status": "NOT FOUND",
+  "official_or_provider_candidates": [],
+  "explicit_668_input_contract_verified": false,
+  "ground_truth_feature_conversion_run": false,
+  "ground_truth_bvh_comparison_passed": false,
+  "feature_to_joint_converter": null,
+  "feature_to_bvh_converter": null,
+  "reason": "No converter is executed without an explicit Motion-S 668-D contract and a provider-defined invocation path."
+}

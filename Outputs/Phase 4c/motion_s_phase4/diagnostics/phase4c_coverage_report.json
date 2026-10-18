@@ -1,0 +1,27 @@
+{
+  "supported_max_t": 512,
+  "policy": "T<=512 supported; T>512 retained by ID and never truncated",
+  "splits": {
+    "train": {
+      "split": "train",
+      "original": 9970,
+      "supported": 9936,
+      "excluded_gt512": 34,
+      "coverage_percentage": 99.65897693079238
+    },
+    "validation": {
+      "split": "validation",
+      "original": 1246,
+      "supported": 1243,
+      "excluded_gt512": 3,
+      "coverage_percentage": 99.75922953451044
+    },
+    "test": {
+      "split": "test",
+      "original": 1247,
+      "supported": 1243,
+      "excluded_gt512": 4,
+      "coverage_percentage": 99.67923015236568
+    }
+  }
+}

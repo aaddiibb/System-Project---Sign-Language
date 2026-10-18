@@ -1,0 +1,7 @@
+{
+  "pad_id": 512,
+  "bos_id": 513,
+  "eos_id": 514,
+  "motion_vocab_size": 515,
+  "rvq_decoder_policy": "remove PAD/BOS/EOS; only IDs 0..511 may enter the fixed RVQ decoder"
+}

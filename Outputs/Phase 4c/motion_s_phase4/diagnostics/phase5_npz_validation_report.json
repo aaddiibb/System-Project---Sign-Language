@@ -1,0 +1,30 @@
+{
+  "format": "sample_ids[N], lengths[N], offsets[N+1], tokens_flat[6,sum(lengths)]",
+  "reports": [
+    {
+      "path": "/kaggle/working/motion_s_phase4/results/validation_oracle_tokens.npz",
+      "samples": 1243,
+      "random_samples_checked": 20,
+      "passed": true
+    },
+    {
+      "path": "/kaggle/working/motion_s_phase4/results/validation_end2end_tokens.npz",
+      "samples": 1243,
+      "random_samples_checked": 20,
+      "passed": true
+    },
+    {
+      "path": "/kaggle/working/motion_s_phase4/results/test_oracle_tokens.npz",
+      "samples": 1243,
+      "random_samples_checked": 20,
+      "passed": true
+    },
+    {
+      "path": "/kaggle/working/motion_s_phase4/results/test_end2end_tokens.npz",
+      "samples": 1243,
+      "random_samples_checked": 20,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

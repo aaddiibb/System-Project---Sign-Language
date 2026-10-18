@@ -1,0 +1,7 @@
+{
+  "basis": "supported ground-truth Motion-Features",
+  "low_motion_per_frame_velocity_gt_p01": 0.012205338105559349,
+  "low_motion_sample_mean_velocity_gt_p01": 0.051209632828831675,
+  "repetition_score_gt_p99": 0.6440144321673997,
+  "sample_mean_velocity_gt_p99": 0.1790897759795189
+}

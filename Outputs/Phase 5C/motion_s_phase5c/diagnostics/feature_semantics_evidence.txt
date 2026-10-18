@@ -1,0 +1,159 @@
+MOTION-S 668-D FEATURE SEMANTICS EVIDENCE
+========================================
+
+VERIFIED/PUBLISHED EVIDENCE
+Source: Anthony Marugu / Signvrse, Semantic-Driven Sign Motion Generation abstract
+Location: https://sti.easteco.org/documents/4th_EAC_Regional_STI_Book_of_Abstracts_2026_WEB.pdf (conference book pp. 53–54)
+Claim: Motion-S converts raw BVH into a 668-dimensional D-Pose representation incorporating 6D rotations, joint velocities, and foot-contact signals.
+Interpretation: Feature families are partially identified; their exact indices, joint order, rotation convention, and inverse transform are not supplied.
+Confidence: HIGH for component families; UNRESOLVED for layout
+
+Source: Signvrse Motion-S RVQ-VAE model card
+Location: https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer
+Claim: The model card documents motion-feature input to the RVQ-VAE and describes the first four generic D-Pose components as root rotational velocity, X/Z root velocity, and root height.
+Interpretation: The same card uses a 263-D example and does not provide the complete 668-D layout, joint list, or inverse converter; treat this as partial evidence only.
+Confidence: MEDIUM/PARTIAL
+
+LOCAL KAGGLE ARTIFACT SEARCH
+Files with relevant terms: 8
+Files with converter-like terms: 0
+Participant/unknown artifacts are clues only and are not accepted as authoritative converters.
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/phase5b_config.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  "decoder_contract": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/decoder_contract.json",
+    "motion_mean": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "motion_std": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_std_668.npy",
+  "motion_mean": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "motion_std": "/kaggle/input/datasets/adibraian/phase-5aoutput/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/phase5b_report.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  "latent_dim": 256,
+    "motion_dim": 668,
+    "temporal_upsampling": 4
+  "duration_mean_signed_error": 555.8173773129525,
+    "prefix_raw_mae": 1.7266686645779916,
+    "time_normalized_raw_mae": 1.9329129498000106,
+  "Metric": "prefix feature MAE",
+      "Oracle": 1.7266686645779916,
+      "End-to-End": 1.7707672007169155,
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/README_phase5c.txt
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  ConvTranspose1d 512->512 (k=3,s=1,p=1,op=0), ReLU, BatchNorm1d;
+ConvTranspose1d 512->668 (k=3,s=1,p=1,op=0), no final activation.
+  3. Continuous motion output
+[4*T,668], float32. Generated durations are untrimmed.
+  10. Explicit unresolved item
+The semantic layout / joint conversion of the 668-dimensional Motion-S representation must be
+verified before skeleton/BVH visualization.
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/results/oracle_motion_summary.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  "mean_predicted_to_gt_frame_ratio": 2.4555119827549583,
+  "mean_raw_prefix_MAE": 1.7266686645779916,
+  "mean_raw_prefix_MSE": 31.858418562259075,
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/results/end2end_motion_summary.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  "mean_time_normalized_raw_MSE": 37.06258936292035,
+  "mean_time_normalized_RMSE": 5.96684152932683,
+  "mean_time_normalized_correlation": 0.9840561557391114,
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/diagnostics/decoder_contract.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  "checkpoint_config": {
+    "input_dim": 668,
+    "output_dim": 668,
+  "input_dim": 668,
+    "output_dim": 668,
+    "hidden_dim": 512,
+  "motion_representation": {
+    "shape": "[T,668]",
+    "feature_dim": 668,
+  "shape": "[T,668]",
+    "feature_dim": 668,
+    "motion_dim": 668,
+  "feature_dim": 668,
+    "motion_dim": 668,
+    "temporal_upsampling_factor": 4,
+  "in": 512,
+        "out": 668,
+        "kernel": 3,
+  "official_statistics_confirmed": false,
+    "mean_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "std_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_std_668.npy",
+  "mean_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "std_file": "/kaggle/working/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "feature_dim": 668,
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/diagnostics/small_decoding_gate.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  479,
+        668
+      ],
+  984,
+        668
+      ],
+  1092,
+        668
+      ],
+  290,
+        668
+      ],
+  336,
+        668
+      ],
+  660,
+        668
+      ],
+  392,
+        668
+      ],
+  524,
+        668
+      ],
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+File: /kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/diagnostics/decoder_load_verification.json
+Authority: participant/unknown artifact (clue only)
+Matched: 668
+Relevant code/text:
+  ],
+  "motion_dim": 668,
+  "temporal_expansion": 4,
+Interpretation: requires explicit 668-D input contract and ground-truth BVH validation before use.
+Confidence: LOW
+
+CURRENT SCIENTIFIC CONCLUSION
+The representation is partially identified as 668-D D-Pose containing 6D rotations, joint velocities, and foot contacts.
+The exact index layout, joint order, rotation convention, root integration, and inverse feature-to-joint/BVH conversion remain unresolved unless a provider utility discovered above explicitly proves them.

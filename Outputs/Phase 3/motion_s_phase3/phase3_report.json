@@ -1,0 +1,173 @@
+{
+  "phase": "Phase 3 - Text to Gloss",
+  "phase3_complete": true,
+  "model": {
+    "architecture": "T5-small sequence-to-sequence",
+    "offline_source": "/kaggle/input/models/hritik619916/t5-small/tensorflow2/default/1",
+    "best_model_directory": "/kaggle/working/motion_s_phase3/best_model",
+    "tokenizer_directory": "/kaggle/working/motion_s_phase3/tokenizer",
+    "fixed_prefix": "text to gloss: ",
+    "parameter_count": 60506624
+  },
+  "training_samples": 9970,
+  "validation_samples": 1246,
+  "test_samples": 1247,
+  "training_samples_excluded_by_quality_control": 0,
+  "best_epoch": 12,
+  "validation": {
+    "n": 1246.0,
+    "bleu": 0.26464091308060866,
+    "token_precision": 0.7052093951170997,
+    "token_recall": 0.7031478455555502,
+    "token_f1": 0.6981254671493673,
+    "exact_match": 0.13563402889245585,
+    "edit_distance": 2.5642054574638844,
+    "normalized_edit_distance": 0.48361758270265487
+  },
+  "validation_raw_representation": {
+    "bleu": 0.23756196233223914,
+    "token_precision": 0.5850414054467024,
+    "token_recall": 0.582291846284623,
+    "token_f1": 0.5789308627235721,
+    "exact_match": 0.13001605136436598,
+    "edit_distance": 2.711878009630819,
+    "normalized_edit_distance": 0.51683511245309
+  },
+  "test": {
+    "n": 1247.0,
+    "bleu": 0.2603869097666669,
+    "token_precision": 0.6978414561914963,
+    "token_recall": 0.6891605487423518,
+    "token_f1": 0.6876075482836865,
+    "exact_match": 0.1339214113873296,
+    "edit_distance": 2.723336006415397,
+    "normalized_edit_distance": 0.5007014864424582
+  },
+  "test_raw_representation": {
+    "bleu": 0.23253595016832498,
+    "token_precision": 0.5692236258796002,
+    "token_recall": 0.5617186566250033,
+    "token_f1": 0.5609777801702548,
+    "exact_match": 0.12991178829190056,
+    "edit_distance": 2.868484362469928,
+    "normalized_edit_distance": 0.5347965353913916
+  },
+  "clean_test_subset": {
+    "n": 1234.0,
+    "bleu": 0.2624940830614447,
+    "token_precision": 0.7007265964721394,
+    "token_recall": 0.6936646214401482,
+    "token_f1": 0.6918646156292088,
+    "exact_match": 0.13452188006482982,
+    "edit_distance": 2.520259319286872,
+    "normalized_edit_distance": 0.4975229457198663
+  },
+  "phase2_comparison": {
+    "same_phase1_split": true,
+    "baseline_results": {
+      "validation": {
+        "TF-IDF retrieval": {
+          "bleu": 0.1094276713,
+          "token_f1": 0.4129747154,
+          "exact_match": 0.007223114,
+          "edit_distance": 3.9374
+        },
+        "SBERT retrieval": {
+          "bleu": 0.0973204753,
+          "token_f1": 0.3880102876,
+          "exact_match": 0.0080256822,
+          "edit_distance": 4.3411
+        }
+      },
+      "test": {
+        "TF-IDF retrieval": {
+          "bleu": 0.1069681297,
+          "token_f1": 0.4215114575,
+          "exact_match": 0.006415397
+        },
+        "SBERT retrieval": {
+          "bleu": 0.1021802074,
+          "token_f1": 0.402075085,
+          "exact_match": 0.01042502
+        }
+      }
+    },
+    "retrieval_diagnostics": {
+      "sbert_mean_validation_similarity": 0.6476238777,
+      "similarity_vs_gloss_f1_spearman": 0.5226967147
+    },
+    "comparison_rows": [
+      {
+        "split": "validation",
+        "system": "TF-IDF retrieval",
+        "bleu": 0.1094276713,
+        "token_f1": 0.4129747154,
+        "exact_match": 0.007223114,
+        "edit_distance": 3.9374
+      },
+      {
+        "split": "validation",
+        "system": "SBERT retrieval",
+        "bleu": 0.0973204753,
+        "token_f1": 0.3880102876,
+        "exact_match": 0.0080256822,
+        "edit_distance": 4.3411
+      },
+      {
+        "split": "validation",
+        "system": "Phase 3 T5-small (beam_4)",
+        "bleu": 0.26464091308060866,
+        "token_f1": 0.6981254671493673,
+        "exact_match": 0.13563402889245585,
+        "edit_distance": 2.5642054574638844
+      },
+      {
+        "split": "test",
+        "system": "TF-IDF retrieval",
+        "bleu": 0.1069681297,
+        "token_f1": 0.4215114575,
+        "exact_match": 0.006415397,
+        "edit_distance": NaN
+      },
+      {
+        "split": "test",
+        "system": "SBERT retrieval",
+        "bleu": 0.1021802074,
+        "token_f1": 0.402075085,
+        "exact_match": 0.01042502,
+        "edit_distance": NaN
+      },
+      {
+        "split": "test",
+        "system": "Phase 3 T5-small (beam_4)",
+        "bleu": 0.2603869097666669,
+        "token_f1": 0.6876075482836865,
+        "exact_match": 0.1339214113873296,
+        "edit_distance": 2.723336006415397
+      }
+    ]
+  },
+  "decoding_method": "beam_4",
+  "phase1_split_fingerprint_sha256": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "data_leakage_detected": false,
+  "overfit_gate": {
+    "sample_count": 32,
+    "initial_loss": 4.542189598083496,
+    "final_loss": 0.0005778670310974121,
+    "loss_reduction": 0.9998727778709763,
+    "lexical_token_f1": 1.0,
+    "lexical_exact_match": 1.0,
+    "minimum_loss_reduction": 0.5,
+    "minimum_token_f1": 0.7,
+    "passed": true
+  },
+  "success_criteria": {
+    "phase1_fingerprint_exact_match": true,
+    "overfit_gate_passed": true,
+    "train_input_truncation_below_1_percent": true,
+    "train_target_truncation_below_1_percent": true,
+    "phase3_validation_f1_beats_both_phase2_retrievers": true,
+    "phase3_test_f1_beats_both_phase2_retrievers": true,
+    "best_model_reload_and_demo_succeeded": true
+  }
+}

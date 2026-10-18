@@ -1,0 +1,12 @@
+{
+  "phase1": "D:\\System Project\\Outputs\\phase 1\\motion_s_phase1",
+  "phase3": "D:\\System Project\\Outputs\\Phase 3\\motion_s_phase3",
+  "phase5b": "D:\\System Project\\Outputs\\phase 5b\\motion_s_phase5",
+  "phase8": "D:\\System Project\\Outputs\\Phase 8\\motion_s_phase8",
+  "motion_features": null,
+  "competition": null,
+  "rvq_checkpoint": "D:\\System Project\\rvq_vae_best.pth",
+  "rvq_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "motion_metric_reference": "rvq_reconstruction_proxy",
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d"
+}

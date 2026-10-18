@@ -1,0 +1,335 @@
+{
+  "phase": "Phase 7 - Autoregressive Exposure-Bias Repair",
+  "phase7_complete": true,
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "initial_checkpoint": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/best_model/model.pt",
+  "initial_checkpoint_sha256": "b01d4f6db3c377b368d6fff658b28cdc153fb5d18acfd256ae5f84935ce558ee",
+  "architecture_changed": false,
+  "length_model_changed": false,
+  "models": {
+    "original": {
+      "teacher_forced": {
+        "loss": 2.1709746446042457,
+        "motion_only_accuracy": 0.5168983499258307,
+        "per_level_accuracy": [
+          0.8064336070713095,
+          0.6293067853374318,
+          0.49929653927910567,
+          0.4306632411188084,
+          0.37741432307198236,
+          0.3582756036763469
+        ]
+      },
+      "oracle_length_tokens": {
+        "model": "original",
+        "aligned_token_accuracy": 0.14404817921150082,
+        "micro_token_accuracy": 0.1382096414899094,
+        "normalized_token_edit_distance": 0.8505250758539967,
+        "per_level_accuracy": [
+          0.1757351929164564,
+          0.17601810646725086,
+          0.13308406355614688,
+          0.11802082855438822,
+          0.11028276062455078,
+          0.1161168968206634
+        ]
+      },
+      "oracle_length_motion": {
+        "model": "original",
+        "normalized_feature_mae": 0.8565560692467233,
+        "time_normalized_raw_mae": 1.7516869699053483,
+        "velocity_mae": 0.09139330725898114,
+        "motion_variance": 0.47773587370605036,
+        "repetition_score": 0.4746256094293728,
+        "collapse_rate": 0.5108608205953339,
+        "extreme_motion_rate": 0.029766693483507644,
+        "duration_mae": 1.4907481898632342
+      },
+      "validation": {
+        "epoch": 0,
+        "token": {
+          "model": "original",
+          "aligned_token_accuracy": 0.15011298276549417,
+          "micro_token_accuracy": 0.14603073032711686,
+          "normalized_token_edit_distance": 0.8440359202362558,
+          "per_level_accuracy": [
+            0.18243915225620427,
+            0.1820922218196116,
+            0.1413625885636309,
+            0.12635206500705426,
+            0.1197989345380814,
+            0.12413941977811871
+          ]
+        },
+        "motion": {
+          "model": "original",
+          "normalized_feature_mae": 0.8516087770845654,
+          "time_normalized_raw_mae": 1.7367022741924634,
+          "velocity_mae": 0.09019211359615778,
+          "motion_variance": 0.47399481483628464,
+          "repetition_score": 0.4752477828602064,
+          "collapse_rate": 0.5181013676588898,
+          "extreme_motion_rate": 0.02011263073209976,
+          "duration_mae": 1.5221238938053097
+        },
+        "p_max": 0.0
+      }
+    },
+    "control": {
+      "teacher_forced": {
+        "loss": 2.157690335810805,
+        "motion_only_accuracy": 0.5191017622200813,
+        "per_level_accuracy": [
+          0.8079781621324036,
+          0.6313101191295438,
+          0.5015369087489104,
+          0.4333929745683657,
+          0.3797235093514398,
+          0.36066889938982427
+        ]
+      },
+      "oracle_length_tokens": {
+        "model": "control",
+        "aligned_token_accuracy": 0.1442315646761772,
+        "micro_token_accuracy": 0.13815101976316824,
+        "normalized_token_edit_distance": 0.8513744742419437,
+        "per_level_accuracy": [
+          0.17524582893670382,
+          0.17484822070315487,
+          0.1335887201602667,
+          0.1192824700646878,
+          0.11013748069306174,
+          0.1158033980211344
+        ]
+      },
+      "oracle_length_motion": {
+        "model": "control",
+        "normalized_feature_mae": 0.8624947649139794,
+        "time_normalized_raw_mae": 1.7581553606141123,
+        "velocity_mae": 0.0902893397648394,
+        "motion_variance": 0.4770799176233971,
+        "repetition_score": 0.46920569167590975,
+        "collapse_rate": 0.5197103781174578,
+        "extreme_motion_rate": 0.04022526146419952,
+        "duration_mae": 1.4907481898632342
+      },
+      "validation": {
+        "epoch": 2,
+        "token": {
+          "model": "control_epoch2",
+          "aligned_token_accuracy": 0.15154529669318903,
+          "micro_token_accuracy": 0.1476381746833296,
+          "normalized_token_edit_distance": 0.842843985926311,
+          "per_level_accuracy": [
+            0.18451302531050273,
+            0.18408128965607629,
+            0.14333623726958036,
+            0.12703050674972438,
+            0.12147191019898387,
+            0.12539607891510998
+          ]
+        },
+        "motion": {
+          "model": "control_epoch2",
+          "normalized_feature_mae": 0.8470892460233055,
+          "time_normalized_raw_mae": 1.7225307260227127,
+          "velocity_mae": 0.08926936814730818,
+          "motion_variance": 0.4755035193293539,
+          "repetition_score": 0.469693695500986,
+          "collapse_rate": 0.5100563153660499,
+          "extreme_motion_rate": 0.028962188254223652,
+          "duration_mae": 1.5221238938053097
+        },
+        "p_max": 0.0
+      }
+    },
+    "sc_point": {
+      "teacher_forced": {
+        "loss": 2.121490413673537,
+        "motion_only_accuracy": 0.5254571220300449,
+        "per_level_accuracy": [
+          0.8118548424095059,
+          0.6375265709348381,
+          0.508770320074628,
+          0.4405346301478797,
+          0.3866816534385466,
+          0.36737471517487114
+        ]
+      },
+      "oracle_length_tokens": {
+        "model": "sc_point",
+        "aligned_token_accuracy": 0.15481649395831668,
+        "micro_token_accuracy": 0.14793320181676378,
+        "normalized_token_edit_distance": 0.8389708903240476,
+        "per_level_accuracy": [
+          0.19056903855270604,
+          0.18741875793304888,
+          0.14258842960040372,
+          0.12615650471777462,
+          0.11795201174473552,
+          0.12291446835191387
+        ]
+      },
+      "oracle_length_motion": {
+        "model": "sc_point",
+        "normalized_feature_mae": 0.8474933784140374,
+        "time_normalized_raw_mae": 1.7121783198364684,
+        "velocity_mae": 0.08942903191966102,
+        "motion_variance": 0.48649195001040685,
+        "repetition_score": 0.4689987036384017,
+        "collapse_rate": 0.4746580852775543,
+        "extreme_motion_rate": 0.02574416733708769,
+        "duration_mae": 1.4907481898632342
+      },
+      "validation": {
+        "epoch": 10,
+        "token": {
+          "model": "sc_point_epoch10",
+          "aligned_token_accuracy": 0.1611621166067846,
+          "micro_token_accuracy": 0.1562137811048835,
+          "normalized_token_edit_distance": 0.8317264297998294,
+          "per_level_accuracy": [
+            0.19751135233484185,
+            0.19548373667208907,
+            0.1506911625253452,
+            0.13487113461671896,
+            0.12741598501260515,
+            0.13130931546770078
+          ]
+        },
+        "motion": {
+          "model": "sc_point_epoch10",
+          "normalized_feature_mae": 0.8327325795891778,
+          "time_normalized_raw_mae": 1.6825248817714682,
+          "velocity_mae": 0.08856991489964057,
+          "motion_variance": 0.4685517310398164,
+          "repetition_score": 0.472654290607577,
+          "collapse_rate": 0.50201126307321,
+          "extreme_motion_rate": 0.02252614641995173,
+          "duration_mae": 1.5221238938053097
+        },
+        "p_max": 0.15
+      }
+    },
+    "sc_span": {
+      "teacher_forced": {
+        "loss": 2.142822120580184,
+        "motion_only_accuracy": 0.5218557089915534,
+        "per_level_accuracy": [
+          0.809599180315334,
+          0.6339633894572647,
+          0.5050159807924638,
+          0.43665794987077733,
+          0.38296554571730057,
+          0.3629322077961799
+        ]
+      },
+      "oracle_length_tokens": {
+        "model": "sc_span",
+        "aligned_token_accuracy": 0.14971708541446424,
+        "micro_token_accuracy": 0.1435951940379155,
+        "normalized_token_edit_distance": 0.8440764402594694,
+        "per_level_accuracy": [
+          0.18365677233870104,
+          0.18440611093269715,
+          0.13719777951094186,
+          0.12270037161077213,
+          0.11418237983820403,
+          0.11942774999617685
+        ]
+      },
+      "oracle_length_motion": {
+        "model": "sc_span",
+        "normalized_feature_mae": 0.8478593261895981,
+        "time_normalized_raw_mae": 1.7145379034866755,
+        "velocity_mae": 0.08950852541581143,
+        "motion_variance": 0.46058012995058634,
+        "repetition_score": 0.4728954633610337,
+        "collapse_rate": 0.5181013676588898,
+        "extreme_motion_rate": 0.02091713596138375,
+        "duration_mae": 1.4907481898632342
+      },
+      "validation": {
+        "epoch": 4,
+        "token": {
+          "model": "sc_span_epoch4",
+          "aligned_token_accuracy": 0.15692042960897581,
+          "micro_token_accuracy": 0.1527765999275301,
+          "normalized_token_edit_distance": 0.8364812546880082,
+          "per_level_accuracy": [
+            0.19396495231633887,
+            0.19115096099730935,
+            0.14629671032850458,
+            0.13154831199068684,
+            0.12441696412739285,
+            0.129281699804948
+          ]
+        },
+        "motion": {
+          "model": "sc_span_epoch4",
+          "normalized_feature_mae": 0.8379467847552495,
+          "time_normalized_raw_mae": 1.6941238380399137,
+          "velocity_mae": 0.08854855456459168,
+          "motion_variance": 0.46253542346763804,
+          "repetition_score": 0.4735913268013498,
+          "collapse_rate": 0.5076427996781979,
+          "extreme_motion_rate": 0.01850362027353178,
+          "duration_mae": 1.5221238938053097
+        },
+        "p_max": 0.15
+      }
+    }
+  },
+  "best_model": "sc_point",
+  "best_self_conditioned_model": "sc_point",
+  "selected_corruption_probabilities": {
+    "point": 0.15,
+    "span": 0.15
+  },
+  "oracle_length_test": {
+    "model": "sc_point",
+    "aligned_token_accuracy": 0.15481649395831668,
+    "micro_token_accuracy": 0.14793320181676378,
+    "normalized_token_edit_distance": 0.8389708903240476,
+    "per_level_accuracy": [
+      0.19056903855270604,
+      0.18741875793304888,
+      0.14258842960040372,
+      0.12615650471777462,
+      0.11795201174473552,
+      0.12291446835191387
+    ],
+    "normalized_feature_mae": 0.8474933784140374,
+    "time_normalized_raw_mae": 1.7121783198364684,
+    "velocity_mae": 0.08942903191966102,
+    "motion_variance": 0.48649195001040685,
+    "repetition_score": 0.4689987036384017,
+    "collapse_rate": 0.4746580852775543,
+    "extreme_motion_rate": 0.02574416733708769,
+    "duration_mae": 1.4907481898632342
+  },
+  "predicted_length_end2end": {
+    "model": "best_end2end",
+    "aligned_token_accuracy": 0.1443248626194756,
+    "micro_token_accuracy": 0.1431056225962838,
+    "normalized_token_edit_distance": 0.8555090122339558,
+    "per_level_accuracy": "[0.18260698760814054, 0.18240202232413552, 0.1383515667033896, 0.12203974618465664, 0.11544669621582844, 0.11778671654155244]",
+    "normalized_feature_mae": 0.8946792146944751,
+    "time_normalized_raw_mae": 1.8400517129313052,
+    "velocity_mae": 0.0888070682826439,
+    "motion_variance": 0.4963162676440297,
+    "repetition_score": 0.4635218642841195,
+    "collapse_rate": 0.4352373290426388,
+    "extreme_motion_rate": 0.0225261464199517,
+    "duration_mae": 79.07723250201126
+  },
+  "exposure_bias": {
+    "original_gap": 0.3786887084359213,
+    "best_phase7_gap": 0.37752392021328113,
+    "first_error_propagation_improved": true,
+    "history_robustness_improved": true
+  },
+  "dominant_remaining_failure": "EXPOSURE_BIAS_REDUCED",
+  "recommended_phase8": "refine the best exposure-aware model; then test repetition/dynamics regularization",
+  "ready_for_phase8": true
+}

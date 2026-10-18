@@ -1,0 +1,38 @@
+reference_split,query_split,similarity,reference_id,query_id,reference_sentence,query_sentence
+train,validation,1.0,2249798,2249713,Please leave now.,Now please leave.
+train,validation,0.9805234853876506,3674933,300960,He kept secret that he had bought his son a bicycle.,He kept it secret that he had bought a bicycle for his son.
+train,validation,0.9597673568045909,254761,2713305,I am not certain about that.,I'm not certain about that.
+train,validation,0.9527987046117452,2538911,6246256,I'm responsible for what happened here.,I'm not responsible for what happened.
+train,validation,0.9300782851683053,32108,3633564,Nobody likes it.,Nobody likes him.
+train,validation,0.9258826507671929,5193204,5193189,I have to deal with that tomorrow.,I'll deal with that tomorrow.
+train,validation,0.9167975634864303,2861736,2867211,He helped me.,He helped us.
+train,validation,0.9135218274570258,63296,2006602,I caught three fish yesterday.,Yesterday my father caught three fish.
+train,validation,0.910878438875793,2546628,5491552,I'm excited about this.,I'm not excited about it.
+train,validation,0.9098476575917309,4030806,267307,"In general, women live longer than men.",Women generally live longer than men.
+train,validation,0.9053208780485845,3913798,3913799,I can't just leave him there.,I can't just leave her there.
+train,validation,0.9003835942525945,3910418,3910417,Stop scaring them.,Stop scaring us.
+train,test,1.0,5513553,5514188,Today there's a full moon.,There's a full moon today.
+train,test,0.9978043198699885,3908951,3908171,I tell him everything.,Tell him everything.
+train,test,0.9954007646587889,8901455,1176031,I bought vegetables and some fruit.,He bought vegetables and some fruit.
+train,test,0.9856461117963736,2359663,2663434,I've got my own problems.,I've got problems of my own.
+train,test,0.9665534518295966,1874073,1482485,The pen I lost yesterday was new.,The pen I lost yesterday was a new one.
+train,test,0.9555579266341929,2576367,507976,He's smarter than me.,He's smarter than her.
+train,test,0.9535949495033962,1102993,247046,I loved her.,"She loved her, as I loved her."
+train,test,0.9519071771776852,290729,298681,He carried out the plan.,He carried out his plan.
+train,test,0.9468203309885302,2707218,323455,Don't forget to talk to him tomorrow.,Don't forget to talk with him tomorrow.
+train,test,0.9458472137482159,2611759,1160551,I have worked a lot this week.,I worked a lot this week.
+train,test,0.9392848121068688,1421289,657396,The boy carved his name in the tree.,The boy carved his name into the tree.
+train,test,0.9314174162001007,1826752,3171850,That idea's not bad.,That's a bad idea.
+train,test,0.9276776762211203,63595,3153306,Money does not always bring happiness.,Money doesn't always bring happiness.
+train,test,0.9220980467546601,5951510,5951508,I'm not going to let him push me around.,I'm not going to let them push me around.
+train,test,0.9220897406102269,1647912,1647923,She cannot stop her.,She cannot stop us.
+train,test,0.9187353124118467,5756970,2805560,He lost a watch.,I've lost my watch.
+train,test,0.9185223441976701,3907381,3129854,Something's happened to them.,Something's happened to it.
+train,test,0.9173317772393672,850629,1908959,I never want to see him again.,I never want to see her again.
+train,test,0.9143677965214071,2891251,1885951,How can this help?,How can I help?
+train,test,0.911931093369992,3907363,3907364,I regret what happened to them.,I regret what happened to him.
+train,test,0.9098890749914083,1329362,3619839,I don't believe I'll do that.,I don't believe I can do that.
+train,test,0.9028054496031754,7399905,4499900,He said he was very confident.,I was very confident.
+validation,test,0.990895817033012,461180,2260456,I couldn't stop laughing.,He couldn't stop laughing.
+validation,test,0.9572289364955829,6236330,7136534,I don't think I'm going to be able to do that.,I think I'm going to be able to do that.
+validation,test,0.9375707286339093,276459,247358,Whoever comes is welcome.,Whoever comes to see us is welcome.

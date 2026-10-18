@@ -1,0 +1,28 @@
+{
+  "notebook_type": "FINAL DEMO / INFERENCE ONLY",
+  "training_performed": false,
+  "custom_sentence": "There is a book on the table",
+  "predicted_gloss": "BOOK TABLE THERE//",
+  "predicted_length": 50,
+  "token_shape": [
+    6,
+    50
+  ],
+  "motion_shape": [
+    200,
+    668
+  ],
+  "token_validity": true,
+  "motion_finite": true,
+  "heldout_sample_id": "1002815",
+  "heldout_sentence": "I like to be home, that way I can work on my story.",
+  "heldout_ground_truth_gloss": "ME LIKE HOME WORK STORY FINISH//",
+  "heldout_predicted_gloss": "HOME LIKE ME THAT WAY WORK STORY//",
+  "heldout_gt_frames": 479,
+  "heldout_generated_frames": 492,
+  "final_phase8_model": "DYNAMICS",
+  "lambda_velocity": 0.1,
+  "lambda_persistence": 0.0,
+  "semantic_sign_correctness_claimed": false,
+  "demo_passed": true
+}

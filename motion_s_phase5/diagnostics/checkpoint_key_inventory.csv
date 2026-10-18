@@ -1,0 +1,70 @@
+key,shape,dtype,numel
+encoder.encoder.0.weight,"[512, 668, 3]",torch.float32,1026048
+encoder.encoder.0.bias,[512],torch.float32,512
+encoder.encoder.2.weight,[512],torch.float32,512
+encoder.encoder.2.bias,[512],torch.float32,512
+encoder.encoder.2.running_mean,[512],torch.float32,512
+encoder.encoder.2.running_var,[512],torch.float32,512
+encoder.encoder.2.num_batches_tracked,[],torch.int64,1
+encoder.encoder.3.weight,"[512, 512, 3]",torch.float32,786432
+encoder.encoder.3.bias,[512],torch.float32,512
+encoder.encoder.5.weight,[512],torch.float32,512
+encoder.encoder.5.bias,[512],torch.float32,512
+encoder.encoder.5.running_mean,[512],torch.float32,512
+encoder.encoder.5.running_var,[512],torch.float32,512
+encoder.encoder.5.num_batches_tracked,[],torch.int64,1
+encoder.encoder.6.weight,"[512, 512, 3]",torch.float32,786432
+encoder.encoder.6.bias,[512],torch.float32,512
+encoder.encoder.8.weight,[512],torch.float32,512
+encoder.encoder.8.bias,[512],torch.float32,512
+encoder.encoder.8.running_mean,[512],torch.float32,512
+encoder.encoder.8.running_var,[512],torch.float32,512
+encoder.encoder.8.num_batches_tracked,[],torch.int64,1
+encoder.encoder.9.weight,"[256, 512, 3]",torch.float32,393216
+encoder.encoder.9.bias,[256],torch.float32,256
+encoder.encoder.11.weight,[256],torch.float32,256
+encoder.encoder.11.bias,[256],torch.float32,256
+encoder.encoder.11.running_mean,[256],torch.float32,256
+encoder.encoder.11.running_var,[256],torch.float32,256
+encoder.encoder.11.num_batches_tracked,[],torch.int64,1
+rvq.quantizers.0.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.0.cluster_size,[512],torch.float32,512
+rvq.quantizers.0.embedding_avg,"[256, 512]",torch.float32,131072
+rvq.quantizers.1.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.1.cluster_size,[512],torch.float32,512
+rvq.quantizers.1.embedding_avg,"[256, 512]",torch.float32,131072
+rvq.quantizers.2.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.2.cluster_size,[512],torch.float32,512
+rvq.quantizers.2.embedding_avg,"[256, 512]",torch.float32,131072
+rvq.quantizers.3.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.3.cluster_size,[512],torch.float32,512
+rvq.quantizers.3.embedding_avg,"[256, 512]",torch.float32,131072
+rvq.quantizers.4.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.4.cluster_size,[512],torch.float32,512
+rvq.quantizers.4.embedding_avg,"[256, 512]",torch.float32,131072
+rvq.quantizers.5.embedding,"[256, 512]",torch.float32,131072
+rvq.quantizers.5.cluster_size,[512],torch.float32,512
+rvq.quantizers.5.embedding_avg,"[256, 512]",torch.float32,131072
+decoder.decoder.0.weight,"[256, 512, 3]",torch.float32,393216
+decoder.decoder.0.bias,[512],torch.float32,512
+decoder.decoder.2.weight,[512],torch.float32,512
+decoder.decoder.2.bias,[512],torch.float32,512
+decoder.decoder.2.running_mean,[512],torch.float32,512
+decoder.decoder.2.running_var,[512],torch.float32,512
+decoder.decoder.2.num_batches_tracked,[],torch.int64,1
+decoder.decoder.3.weight,"[512, 512, 3]",torch.float32,786432
+decoder.decoder.3.bias,[512],torch.float32,512
+decoder.decoder.5.weight,[512],torch.float32,512
+decoder.decoder.5.bias,[512],torch.float32,512
+decoder.decoder.5.running_mean,[512],torch.float32,512
+decoder.decoder.5.running_var,[512],torch.float32,512
+decoder.decoder.5.num_batches_tracked,[],torch.int64,1
+decoder.decoder.6.weight,"[512, 512, 3]",torch.float32,786432
+decoder.decoder.6.bias,[512],torch.float32,512
+decoder.decoder.8.weight,[512],torch.float32,512
+decoder.decoder.8.bias,[512],torch.float32,512
+decoder.decoder.8.running_mean,[512],torch.float32,512
+decoder.decoder.8.running_var,[512],torch.float32,512
+decoder.decoder.8.num_batches_tracked,[],torch.int64,1
+decoder.decoder.9.weight,"[512, 668, 3]",torch.float32,1026048
+decoder.decoder.9.bias,[668],torch.float32,668

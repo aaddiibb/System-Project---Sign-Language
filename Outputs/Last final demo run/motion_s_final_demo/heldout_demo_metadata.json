@@ -1,0 +1,19 @@
+{
+  "available": true,
+  "diagnostic": "",
+  "sample_id": "1002815",
+  "sentence": "I like to be home, that way I can work on my story.",
+  "ground_truth_gloss": "ME LIKE HOME WORK STORY FINISH//",
+  "predicted_gloss": "HOME LIKE ME THAT WAY WORK STORY//",
+  "ground_truth_frames": 479,
+  "generated_frames": 492,
+  "generated_token_length": 123,
+  "metrics": {
+    "Native absolute duration error (frames)": 13,
+    "Time-normalized raw MAE": 2.2144021914873093,
+    "Time-normalized raw RMSE": 6.259420222056312,
+    "Flattened correlation": 0.9811353903619594,
+    "Normalized active-feature MAE": 1.0832946300506592,
+    "Aligned normalized velocity MAE": 0.08537431061267853
+  }
+}

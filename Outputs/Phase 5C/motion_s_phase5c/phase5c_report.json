@@ -1,0 +1,69 @@
+{
+  "phase": "Phase 5C - Motion Interpretation and Visualization",
+  "phase5c_complete": true,
+  "feature_space_analysis": "PASS",
+  "feature_representation": {
+    "dimension": 668,
+    "semantics_status": "PARTIAL",
+    "semantics_verified": false,
+    "verified_feature_families": [
+      "6D rotations",
+      "joint velocities",
+      "foot-contact signals"
+    ],
+    "joint_conversion_verified": false,
+    "bvh_conversion_verified": false
+  },
+  "bvh_alignment": {
+    "samples": 10,
+    "exact_frame_matches": 0,
+    "frame_rate_if_consistent": 23.999808001535985
+  },
+  "selected_cases": {
+    "A_LOW_ERROR_NON_COLLAPSED": 5,
+    "B_MEDIUM_ERROR_NON_COLLAPSED": 5,
+    "C_HIGH_ERROR": 5,
+    "D_COLLAPSE_FLAGGED": 5,
+    "E_EXTREME_MOTION_FLAGGED": 5
+  },
+  "collapse_analysis": {
+    "oracle_flagged": 728,
+    "end2end_flagged": 723,
+    "analyzed_flagged_rows": 1451,
+    "dominant_pattern": "AUTO_UNKNOWN — feature-space collapse confirmed; manual plot inspection required for subtype"
+  },
+  "overgeneration": {
+    "oracle_mean_signed_frame_error": 555.8173773129525,
+    "end2end_mean_signed_frame_error": 551.2703137570394,
+    "dominant_tail_behavior": "REPETITIVE_TAIL"
+  },
+  "rvq_ablation": {
+    "performed": false,
+    "rows": 0,
+    "base_only_behavior": null,
+    "residual_effect": null
+  },
+  "visualization": {
+    "feature_trajectory_plots": 25,
+    "velocity_plots": 25,
+    "verified_skeleton_visualization": false,
+    "videos_created": 0,
+    "bvh_exports_created": 0
+  },
+  "extreme_motion": {
+    "oracle_flagged": 43,
+    "end2end_flagged": 45
+  },
+  "main_bottleneck": {
+    "finding": "Phase-4 stopping/length control plus autoregressive collapse/drift",
+    "evidence": [
+      "Oracle mean signed duration error is 555.817 frames and end-to-end is 551.270 frames.",
+      "Collapse flags affect 728 oracle and 723 end-to-end samples.",
+      "Oracle-to-end-to-end normalized-feature degradation is only 0.006420.",
+      "Selected excess tails are most commonly classified as REPETITIVE_TAIL using ground-truth-derived thresholds.",
+      "Phase-5A ground-truth reconstruction passed, so decoder failure is not the leading explanation.",
+      "Sample-level EOS metadata was unavailable, so the EOS mechanism cannot be directly stratified in this run."
+    ]
+  },
+  "ready_for_phase6": true
+}

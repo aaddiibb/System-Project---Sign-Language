@@ -1,0 +1,20 @@
+{
+  "phase1": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1",
+  "phase3": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3",
+  "phase4": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4",
+  "phase5": "/kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5",
+  "phase6": "/kaggle/input/datasets/adibraian/phase-6-output/motion_s_phase6",
+  "phase7": "/kaggle/input/datasets/adibraian/phase-7-output/motion_s_phase7",
+  "official_train_csv": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv",
+  "motion_features": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Motion-Features",
+  "phase4_checkpoint": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/best_model/model.pt",
+  "phase4_sha256": "b01d4f6db3c377b368d6fff658b28cdc153fb5d18acfd256ae5f84935ce558ee",
+  "phase6_length_checkpoint": "/kaggle/input/datasets/adibraian/phase-6-output/motion_s_phase6/length_model/best_model.pt",
+  "phase6_length_sha256": "cb374ceb5e4a914f39cbc59be64db7d465dbf9b3d3bee498f92e8bab35ea0edc",
+  "phase7_sc_point_checkpoint": "/kaggle/input/datasets/adibraian/phase-7-output/motion_s_phase7/models/sc_point/best_model.pt",
+  "phase7_sc_point_sha256": "56f00536688b2adcc98fe12dec8e1bada89c836507a47f1571f8319d781b6816",
+  "rvq_checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+  "rvq_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "passed": true
+}

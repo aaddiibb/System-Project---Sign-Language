@@ -1,0 +1,37 @@
+{
+  "oracle": {
+    "path": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_oracle_tokens.npz",
+    "samples": 1243,
+    "unique_ids": 1243,
+    "packed_shape": [
+      6,
+      303039
+    ],
+    "dtype": "int64",
+    "minimum_id": 0,
+    "maximum_id": 511,
+    "minimum_length": 32,
+    "maximum_length": 512,
+    "forbidden_ids_present": false,
+    "passed": true
+  },
+  "end2end": {
+    "path": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_end2end_tokens.npz",
+    "samples": 1243,
+    "unique_ids": 1243,
+    "packed_shape": [
+      6,
+      301626
+    ],
+    "dtype": "int64",
+    "minimum_id": 0,
+    "maximum_id": 511,
+    "minimum_length": 40,
+    "maximum_length": 512,
+    "forbidden_ids_present": false,
+    "passed": true
+  },
+  "same_sample_id_set": true,
+  "expected_supported_test_count": 1243,
+  "passed": true
+}

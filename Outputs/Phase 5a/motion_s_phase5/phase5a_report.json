@@ -1,0 +1,51 @@
+{
+  "phase": "Phase 5A - Verified RVQ Decoder Recovery",
+  "phase5a_complete": true,
+  "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+  "checkpoint_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "checkpoint_config_verified": true,
+  "strict_decoder_load": true,
+  "codebook_verification": {
+    "passed": true,
+    "count": 6,
+    "shape": [
+      256,
+      512
+    ]
+  },
+  "normalization_files_used": 12463,
+  "normalization_invalid_files": 0,
+  "total_frames_used": 5372828,
+  "near_constant_feature_count": 159,
+  "reconstruction_test": {
+    "samples": 20,
+    "mean_mae": 0.5031887752016406,
+    "mean_mse": 1.6717892615917092,
+    "mean_rmse": 1.270849883167633,
+    "mean_correlation": 0.9992479266503352,
+    "nan_failures": 0,
+    "inf_failures": 0,
+    "all_finite": true,
+    "quality_sanity_pass": true
+  },
+  "all_finite": true,
+  "artifact_verification": {
+    "decoder_contract_path": "/kaggle/working/motion_s_phase5/diagnostics/decoder_contract.json",
+    "motion_mean_path": "/kaggle/working/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "motion_std_path": "/kaggle/working/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "contract_parses": true,
+    "contract_ready_for_phase5b": true,
+    "mean_shape": [
+      668
+    ],
+    "std_shape": [
+      668
+    ],
+    "mean_dtype": "float32",
+    "std_dtype": "float32",
+    "mean_finite": true,
+    "std_finite": true,
+    "passed": true
+  },
+  "ready_for_phase5b": true
+}

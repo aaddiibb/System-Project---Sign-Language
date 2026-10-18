@@ -1,0 +1,16 @@
+{
+  "official_provider_declaration": {
+    "provider": "Signvrse",
+    "model": "Motion-S-RVQ-VAE-Tokenizer",
+    "source_url": "https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+    "num_quantizers": 6,
+    "num_embeddings_per_quantizer": 512,
+    "valid_token_id_range": [
+      0,
+      511
+    ]
+  },
+  "source_metadata": [],
+  "checkpoint_tensors": [],
+  "checkpoint_errors": []
+}

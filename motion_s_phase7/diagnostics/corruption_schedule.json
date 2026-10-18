@@ -1,0 +1,16 @@
+{
+  "name": "two-pass self-conditioned history corruption",
+  "not_exact_scheduled_sampling": true,
+  "candidates": [
+    0.15,
+    0.3,
+    0.45
+  ],
+  "formula": "p_max * min(1,(epoch-1)/(warmup_epochs-1))",
+  "warmup_epochs": 5,
+  "point": "temporal Bernoulli; all six levels together",
+  "span": [
+    2,
+    8
+  ]
+}

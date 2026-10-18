@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "total_samples": 12463,
+  "original_annotated_samples": 12467,
+  "quarantined_samples": 4,
+  "quarantined_sample_ids": [
+    "1361291",
+    "25980",
+    "32734",
+    "4808283"
+  ],
+  "train_samples": 9970,
+  "val_samples": 1246,
+  "test_samples": 1247,
+  "train_val_id_overlap": 0,
+  "train_test_id_overlap": 0,
+  "val_test_id_overlap": 0,
+  "train_val_sentence_overlap": 0,
+  "train_test_sentence_overlap": 0,
+  "val_test_sentence_overlap": 0,
+  "split_strategy": "GroupShuffleSplit by normalized sentence; exact Phase-1 membership reused",
+  "split_fingerprint_sha256": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "split_verified": true
+}

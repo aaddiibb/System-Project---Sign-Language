@@ -1,0 +1,12 @@
+{
+  "primary": "lexicographic",
+  "order": [
+    "lower collapse_rate",
+    "lower normalized_token_edit_distance",
+    "higher micro_token_accuracy",
+    "lower normalized_feature_mae"
+  ],
+  "epoch_screen": "fixed deterministic oracle-length validation subset; lower edit then higher micro accuracy",
+  "full_validation": "top two screened epochs per definitive run",
+  "test_used": false
+}

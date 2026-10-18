@@ -1,0 +1,6 @@
+{
+  "method": "max(training P99.5, training median + 6 scaled MAD)",
+  "long_gloss_tokens": 15,
+  "consecutive_token_repeats": 2,
+  "consecutive_pattern_repeats": 2
+}

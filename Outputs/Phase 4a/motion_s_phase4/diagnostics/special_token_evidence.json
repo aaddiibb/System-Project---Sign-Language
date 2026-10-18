@@ -1,0 +1,7 @@
+{
+  "provider_declared_special_token_ids": null,
+  "negative_ids_observed": 0,
+  "pad_bos_eos_present_in_targets": "not declared; no out-of-range IDs observed",
+  "phase4_model_special_tokens_allocated": false,
+  "note": "PAD/BOS/EOS allocation is deferred to Phase 4B and must start at/above each exact codebook size."
+}

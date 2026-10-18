@@ -1,0 +1,118 @@
+{
+  "samples": [
+    {
+      "sample_id": "3386886",
+      "saved_length": 67,
+      "regenerated_length": 67,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.022222222222222223,
+      "regenerated_aligned_token_accuracy": 0.022222222222222223,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "3732472",
+      "saved_length": 87,
+      "regenerated_length": 87,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.011904761904761904,
+      "regenerated_aligned_token_accuracy": 0.011904761904761904,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "1657658",
+      "saved_length": 512,
+      "regenerated_length": 512,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.00411522633744856,
+      "regenerated_aligned_token_accuracy": 0.00411522633744856,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "5726198",
+      "saved_length": 255,
+      "regenerated_length": 255,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.02717391304347826,
+      "regenerated_aligned_token_accuracy": 0.02717391304347826,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "1556843",
+      "saved_length": 88,
+      "regenerated_length": 88,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.017045454545454544,
+      "regenerated_aligned_token_accuracy": 0.017045454545454544,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "627122",
+      "saved_length": 97,
+      "regenerated_length": 97,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.029209621993127148,
+      "regenerated_aligned_token_accuracy": 0.029209621993127148,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "8535822",
+      "saved_length": 150,
+      "regenerated_length": 150,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.1366906474820144,
+      "regenerated_aligned_token_accuracy": 0.1366906474820144,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    },
+    {
+      "sample_id": "3285313",
+      "saved_length": 512,
+      "regenerated_length": 512,
+      "absolute_length_difference": 0,
+      "prefix_token_agreement": 1.0,
+      "saved_aligned_token_accuracy": 0.025848765432098766,
+      "regenerated_aligned_token_accuracy": 0.025848765432098766,
+      "absolute_metric_difference": 0.0,
+      "valid_ids": true
+    }
+  ],
+  "passed": true,
+  "tolerance": {
+    "max_absolute_length_difference": 8,
+    "maximum_aligned_accuracy_difference": 0.02
+  },
+  "batch_policy": {
+    "boundaries": [
+      64,
+      96,
+      128,
+      181,
+      256,
+      384,
+      512
+    ],
+    "batch_sizes": [
+      8,
+      8,
+      8,
+      8,
+      4,
+      2,
+      1
+    ]
+  },
+  "prefix_agreement_is_diagnostic_not_a_gate": true
+}

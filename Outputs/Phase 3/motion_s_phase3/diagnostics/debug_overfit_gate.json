@@ -1,0 +1,11 @@
+{
+  "sample_count": 32,
+  "initial_loss": 4.542189598083496,
+  "final_loss": 0.0005778670310974121,
+  "loss_reduction": 0.9998727778709763,
+  "lexical_token_f1": 1.0,
+  "lexical_exact_match": 1.0,
+  "minimum_loss_reduction": 0.5,
+  "minimum_token_f1": 0.7,
+  "passed": true
+}

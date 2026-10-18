@@ -1,0 +1,44 @@
+{
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "phase3_model": {
+    "path": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/best_model",
+    "config_sha256": "19d0cb630d1fc250df46f81009f6bb6040469b0d15899eeb299a6ac7c88bb423"
+  },
+  "phase3_tokenizer": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/tokenizer",
+  "phase6_length_checkpoint": {
+    "path": "/kaggle/input/datasets/adibraian/phase-6-output/motion_s_phase6/length_model/best_model.pt",
+    "sha256": "cb374ceb5e4a914f39cbc59be64db7d465dbf9b3d3bee498f92e8bab35ea0edc"
+  },
+  "final_generator": {
+    "path": "/kaggle/working/motion_s_phase8/final_model/best_motion_generator.pt",
+    "sha256": "bc28f4166d5296c6c02fe9636d90afc66864b8fd61c4da7b06b65d791745348b",
+    "source_variant": "dynamics"
+  },
+  "rvq_checkpoint": {
+    "path": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+    "sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f"
+  },
+  "normalization": {
+    "mean": "/kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/diagnostics/motion_mean_668.npy",
+    "mean_sha256": "ebdbf8abe653e5d3066cc532222f29a98d75632a9fadcc0cbfda3c1723dbdc44",
+    "std": "/kaggle/input/datasets/adibraian/phase-5b-output/motion_s_phase5/diagnostics/motion_std_668.npy",
+    "std_sha256": "32cc2f89a2999bcc7eb4f1e492b48fd6d0c75151a35dee5747007e153d940a32"
+  },
+  "token_ids": {
+    "real": [
+      0,
+      511
+    ],
+    "PAD": 512,
+    "BOS": 513,
+    "EOS": 514
+  },
+  "contracts": {
+    "generator": "int64 [6,T]",
+    "decoder": "float32 [4T,668]"
+  },
+  "versions": {
+    "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "torch": "2.10.0+cu128"
+  }
+}

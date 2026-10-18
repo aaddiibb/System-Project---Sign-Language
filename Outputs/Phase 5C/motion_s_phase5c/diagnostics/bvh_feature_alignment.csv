@@ -1,0 +1,11 @@
+sample_id,feature_frames,bvh_frames,frame_match,num_bvh_joints,frame_time,bvh_path
+1002815,479,480,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1002815/1002815.bvh
+1012610,290,291,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1012610/1012610.bvh
+1042390,392,393,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1042390/1042390.bvh
+1043822,628,629,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1043822/1043822.bvh
+1053700,320,321,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1053700/1053700.bvh
+1053704,491,492,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1053704/1053704.bvh
+1115757,865,866,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1115757/1115757.bvh
+1120641,426,427,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1120641/1120641.bvh
+1120860,310,311,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1120860/1120860.bvh
+1121359,305,306,False,55,0.041667,/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/Train/1121359/1121359.bvh

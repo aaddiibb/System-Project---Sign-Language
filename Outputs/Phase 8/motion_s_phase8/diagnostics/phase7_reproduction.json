@@ -1,0 +1,45 @@
+{
+  "locked_test_references": {
+    "micro": 0.1479332018,
+    "edit": 0.8389708903,
+    "feature": 0.8474933784,
+    "collapse": 0.4746580853,
+    "repetition": 0.4689987036
+  },
+  "phase7_report_values": {
+    "micro": 0.14793320181676378,
+    "edit": 0.8389708903240476,
+    "feature": 0.8474933784140374,
+    "collapse": 0.4746580852775543,
+    "repetition": 0.4689987036384017
+  },
+  "report_compatible": true,
+  "validation_subset_token": {
+    "model": "phase7_sc_point",
+    "aligned_token_accuracy": 0.1614756336326019,
+    "micro_token_accuracy": 0.15506658851877178,
+    "normalized_token_edit_distance": 0.8320131798031535,
+    "per_level_accuracy": [
+      0.19629774347953502,
+      0.1909739181400801,
+      0.14970206115072776,
+      0.13421900947543225,
+      0.12742991110676957,
+      0.13177688776008598
+    ]
+  },
+  "validation_subset_motion": {
+    "model": "phase7_sc_point",
+    "normalized_feature_mae": 0.8416764163412154,
+    "time_normalized_raw_mae": 1.6888952429095905,
+    "velocity_mae": 0.08997208266130959,
+    "motion_variance": 0.48376202679619223,
+    "collapse_rate": 0.4479166666666667,
+    "repetition_score": 0.4810967397234595,
+    "extreme_motion_rate": 0.026041666666666668,
+    "duration_mae_frames": 1.4375,
+    "signed_duration_bias": 1.4375
+  },
+  "valid_ids": true,
+  "passed": true
+}

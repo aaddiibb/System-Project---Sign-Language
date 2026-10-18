@@ -1,0 +1,18 @@
+{
+  "split": "validation only",
+  "max_ngram": 8,
+  "medoid_pool": 64,
+  "join_radius": 1,
+  "oov_fallback": "meaning",
+  "semantic_threshold": 0.6,
+  "sentence_encoder": "C:\\Users\\HP\\AppData\\Local\\Temp\\claude\\d--System-Project\\15bf8f11-97d7-4748-8c36-ab1231fe6c12\\scratchpad\\models\\all-MiniLM-L6-v2",
+  "token_ranking": [
+    "lower edit distance",
+    "higher micro accuracy"
+  ],
+  "motion_ranking": [
+    "lower collapse",
+    "lower feature MAE"
+  ],
+  "test_used": false
+}

@@ -1,0 +1,15 @@
+{
+  "teacher_forcing_control_helped": true,
+  "self_conditioning_outperformed_control": true,
+  "better_self_conditioning_variant": "sc_point",
+  "token_accuracy_change": 0.009723560326854369,
+  "edit_distance_change": -0.011554185529949135,
+  "collapse_change": -0.036202735317779566,
+  "repetition_change": -0.005626905790971137,
+  "late_sequence_accuracy_improved": true,
+  "first_error_propagation_improved": true,
+  "history_robustness_improved": true,
+  "teacher_forced_accuracy_change": 0.008558772104214185,
+  "dominant_remaining_failure": "EXPOSURE_BIAS_REDUCED",
+  "recommended_phase8": "refine the best exposure-aware model; then test repetition/dynamics regularization"
+}

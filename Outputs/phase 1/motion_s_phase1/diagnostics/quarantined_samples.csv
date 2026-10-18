@@ -1,0 +1,5 @@
+id,sentence,gloss,row_index,sentence_missing,gloss_missing,motion_missing,motion_ambiguous,motion_candidates,token_missing,token_shape,motion_path,npz_member,shape,ndim,dtype,num_values,numeric,has_nan,has_inf,zero_only,scan_error,invalid_shape
+1361291,Where is there a drugstore?,DRUGSTORE WHERE THERE?,367,False,False,True,False,[],True,,,,,,,,,,,,,True
+25980,Shall we walk to the station?,WALK STATION STATION?,3084,False,False,True,False,[],True,,,,,,,,,,,,,True
+32734,"First of all, he went to the station.",STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION STATION,5939,False,False,True,False,[],True,,,,,,,,,,,,,True
+4808283,The temperature is below zero today.,TEMPERATURE ZERO TODAY//,8400,False,False,True,False,[],True,,,,,,,,,,,,,True

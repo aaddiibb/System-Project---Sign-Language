@@ -1,0 +1,21 @@
+{
+  "feature_dim": 668,
+  "feature_shape": "[T,668]",
+  "frame_rate": 23.999808001535985,
+  "feature_semantics_verified": false,
+  "feature_semantics_status": "PARTIAL",
+  "verified_feature_families": [
+    "6D rotations",
+    "joint velocities",
+    "foot-contact signals"
+  ],
+  "joint_representation": null,
+  "num_joints": null,
+  "root_representation": null,
+  "hand_representation": null,
+  "feature_to_joint_converter": null,
+  "feature_to_bvh_converter": null,
+  "ground_truth_conversion_verified": false,
+  "bvh_feature_frame_alignment_samples": 10,
+  "bvh_feature_exact_frame_matches": 0
+}

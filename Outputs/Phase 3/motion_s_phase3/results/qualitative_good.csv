@@ -1,0 +1,21 @@
+quality_band,sample_id,sentence,reference_gloss,predicted_gloss,lexical_bleu,lexical_token_f1,lexical_edit_distance,lexical_exact_match,failure_reason
+good,1140108,I've been asked to help out.,ME HELP OUT ASK//,ME HELP OUT ASK//,1.0,1.0,0.0,1.0,exact lexical match
+good,1167433,I think he's an honest man.,ME THINK HE HONEST MAN//,ME THINK HE HONEST MAN//,1.0,1.0,0.0,1.0,exact lexical match
+good,1783252,People are people through other people.,PEOPLE PEOPLE OTHER PEOPLE//,PEOPLE PEOPLE OTHER PEOPLE//,1.0,1.0,0.0,1.0,exact lexical match
+good,1885951,How can I help?,HOW CAN I HELP?,HOW CAN I HELP?,1.0,1.0,0.0,1.0,exact lexical match
+good,1908959,I never want to see her again.,ME NEVER WANT SEE HER AGAIN//,ME NEVER WANT SEE HER AGAIN//,1.0,1.0,0.0,1.0,negation construction
+good,2011570,I want to watch this.,ME WANT WATCH THIS//,ME WANT WATCH THIS//,1.0,1.0,0.0,1.0,exact lexical match
+good,2160877,She moved out of her parents' house.,SHE MOVE OUT HER PARENTS HOUSE//,SHE MOVE OUT HER PARENTS HOUSE//,1.0,1.0,0.0,1.0,exact lexical match
+good,2220313,I've never done this before.,ME NEVER DO THIS BEFORE//,ME NEVER DO THIS BEFORE//,1.0,1.0,0.0,1.0,negation construction
+good,2260102,My family is very proud of me.,MY FAMILY VERY PROUD ME//,MY FAMILY VERY PROUD ME//,1.0,1.0,0.0,1.0,exact lexical match
+good,2280881,He wants to live in another world.,HE WANT LIVE ANOTHER WORLD//,HE WANT LIVE ANOTHER WORLD//,1.0,1.0,0.0,1.0,exact lexical match
+good,2360620,I haven't told anyone anything.,ME NOTHING TELL ANYONE//,ME NOTHING TELL ANYONE//,1.0,1.0,0.0,1.0,exact lexical match
+good,2376263,I know what can happen here.,ME KNOW WHAT HAPPEN HERE//,ME KNOW WHAT HAPPEN HERE//,1.0,1.0,0.0,1.0,exact lexical match
+good,2396225,Is the meeting today or tomorrow?,MEETING TODAY OR TOMORROW?,MEETING TODAY OR TOMORROW?,1.0,1.0,0.0,1.0,exact lexical match
+good,2407770,I think I have a right to know.,ME THINK HAVE RIGHT KNOW//,ME THINK HAVE RIGHT KNOW//,1.0,1.0,0.0,1.0,long sentence
+good,244607,I was free from work yesterday.,YESTERDAY WORK FREE ME//,YESTERDAY WORK FREE ME//,1.0,1.0,0.0,1.0,exact lexical match
+good,251685,My father gave a nice watch to me.,MY FATHER GIVE NICE WATCH ME//,MY FATHER GIVE NICE WATCH ME//,1.0,1.0,0.0,1.0,long sentence
+good,2544425,I thought it'd be too much.,ME THINK TOO MUCH//,ME THINK TOO MUCH//,1.0,1.0,0.0,1.0,exact lexical match
+good,262352,"I like English, too.",ME LIKE ENGLISH TOO//,ME LIKE ENGLISH TOO//,1.0,1.0,0.0,1.0,exact lexical match
+good,2639879,We have no information about what's going to happen.,WE HAVE NO INFORMATION ABOUT WHAT HAPPEN//,WE HAVE NO INFORMATION ABOUT WHAT HAPPEN//,1.0,1.0,0.0,1.0,long sentence; negation construction
+good,2641194,I know that everything I need is here.,ME KNOW EVERYTHING NEED HERE//,ME KNOW EVERYTHING NEED HERE//,1.0,1.0,0.0,1.0,long sentence

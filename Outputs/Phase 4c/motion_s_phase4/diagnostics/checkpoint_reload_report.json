@@ -1,0 +1,8 @@
+{
+  "best_epoch": 25,
+  "probe_sample_ids": [
+    "474599"
+  ],
+  "identical": true,
+  "checkpoint_reload_verified": true
+}

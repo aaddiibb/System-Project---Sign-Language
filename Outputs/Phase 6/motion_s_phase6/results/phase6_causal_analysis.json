@@ -1,0 +1,34 @@
+{
+  "length_only_benefit_free_oracle_to_oracle_length": {
+    "duration_mae_frames": -589.3837489943685,
+    "duration_mean_signed_error": -554.3266291230893,
+    "normalized_feature_mae": -0.07532047038855849,
+    "velocity_mae": -0.00505384729036884,
+    "collapse_rate": -0.07481898632341111,
+    "repetition_score": -0.024343561338775854,
+    "extreme_motion_rate": -0.004827031375703939
+  },
+  "length_predictor_gap_oracle_length_to_predicted_length_gt_gloss": {
+    "duration_mae_frames": 48.94770716009654,
+    "duration_mean_signed_error": -1.8085277554304104,
+    "normalized_feature_mae": 0.02056876366507987,
+    "velocity_mae": -0.001629187518169678,
+    "collapse_rate": -0.018503620273531807,
+    "repetition_score": -0.00030956182345015515,
+    "extreme_motion_rate": -0.0008045052292839916
+  },
+  "phase3_propagation_predicted_length_gt_to_predicted_gloss": {
+    "duration_mae_frames": 28.638777152051482,
+    "duration_mean_signed_error": -7.153660498793243,
+    "normalized_feature_mae": 0.020565352832805583,
+    "velocity_mae": -0.0006811480995966568,
+    "collapse_rate": -0.0096540627514079,
+    "repetition_score": -0.010368494463747047,
+    "extreme_motion_rate": 0.003218020917135963
+  },
+  "duration_mae_fraction_removed_by_oracle_length": 0.9974770476692305,
+  "remaining_collapse_after_oracle_length": 0.5108608205953339,
+  "oracle_length_base_vs_deep_level_accuracy_gap": 0.06092836424992226,
+  "dominant_remaining_failure": "EXPOSURE_BIAS",
+  "recommended_next_phase": "target autoregressive exposure bias"
+}

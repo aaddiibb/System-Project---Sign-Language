@@ -1,0 +1,2 @@
+analysis_available,variant,termination,samples,reason
+False,,UNAVAILABLE,0,Sample-level EOS/max-length metadata not located.

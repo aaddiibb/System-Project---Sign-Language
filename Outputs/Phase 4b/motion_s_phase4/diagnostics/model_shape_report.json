@@ -1,0 +1,55 @@
+{
+  "gloss_input_ids": [
+    8,
+    21
+  ],
+  "gloss_attention_mask": [
+    8,
+    21
+  ],
+  "encoder_hidden": [
+    8,
+    21,
+    512
+  ],
+  "encoder_projected": [
+    8,
+    21,
+    256
+  ],
+  "decoder_input_tokens": [
+    8,
+    6,
+    136
+  ],
+  "decoder_embeddings": [
+    8,
+    136,
+    256
+  ],
+  "decoder_hidden": [
+    8,
+    136,
+    256
+  ],
+  "logits": [
+    8,
+    6,
+    136,
+    515
+  ],
+  "targets": [
+    8,
+    6,
+    136
+  ],
+  "padding_mask": [
+    8,
+    136
+  ],
+  "ordering": {
+    "tokens": "[B,L,T]",
+    "hidden": "[B,T,D]",
+    "logits": "[B,L,T,V]"
+  }
+}

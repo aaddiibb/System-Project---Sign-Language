@@ -1,0 +1,1781 @@
+{
+  "phase": "Phase 1 - Dataset Verification and Preprocessing",
+  "readiness_scope": "Phase-2 retrieval artifact export",
+  "phase1_ready": true,
+  "blocking_reasons": [],
+  "non_blocking_warnings": [
+    "4 audited provider-incomplete records are explicitly quarantined: ['1361291', '25980', '32734', '4808283']"
+  ],
+  "dataset_root": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language",
+  "train_csv": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/train.csv",
+  "external_test_csv": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language/test.csv",
+  "train_examples_original": 12467,
+  "train_examples_usable": 12463,
+  "external_test_examples": 3000,
+  "quarantine": {
+    "policy": "Exact audited IDs only; no target substitution",
+    "configured_ids": [
+      "1361291",
+      "25980",
+      "32734",
+      "4808283"
+    ],
+    "applied_ids": [
+      "1361291",
+      "25980",
+      "32734",
+      "4808283"
+    ],
+    "unapproved_bad_ids": [],
+    "unknown_configured_ids": [],
+    "configured_ids_now_valid": []
+  },
+  "columns": {
+    "id": "id",
+    "sentence": "sentence",
+    "gloss": "gloss",
+    "motion_tokens": [
+      "base_tokens",
+      "residual_1",
+      "residual_2",
+      "residual_3",
+      "residual_4",
+      "residual_5"
+    ]
+  },
+  "raw_motion": {
+    "representation": "Observed numeric feature array; no joint reshape performed",
+    "ndim": 2,
+    "feature_dimension": 668,
+    "length_statistics": {
+      "count": 12463,
+      "mean": 431.10230281633636,
+      "median": 389.0,
+      "min": 96.0,
+      "p95": 722.0,
+      "p99": 1156.3799999999992,
+      "max": 7409.0
+    },
+    "dtype_counts": {
+      "float64": 12463,
+      "null": 4
+    }
+  },
+  "motion_tokens": {
+    "examples": 12463,
+    "rvq_levels": 6,
+    "token_length_mean": 108.14819866805745,
+    "token_length_median": 98.0,
+    "token_length_p95": 181.0,
+    "token_length_p99": 289.3799999999992,
+    "token_length_max": 1853,
+    "per_level": [
+      {
+        "level": 0,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 419,
+        "most_common": [
+          [
+            171,
+            41400
+          ],
+          [
+            299,
+            39916
+          ],
+          [
+            312,
+            35869
+          ],
+          [
+            95,
+            29533
+          ],
+          [
+            174,
+            21695
+          ],
+          [
+            139,
+            19125
+          ],
+          [
+            360,
+            17949
+          ],
+          [
+            376,
+            17794
+          ],
+          [
+            50,
+            14412
+          ],
+          [
+            225,
+            13149
+          ]
+        ],
+        "rare_once": 11
+      },
+      {
+        "level": 1,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 492,
+        "most_common": [
+          [
+            87,
+            144849
+          ],
+          [
+            333,
+            76692
+          ],
+          [
+            9,
+            49053
+          ],
+          [
+            88,
+            37503
+          ],
+          [
+            46,
+            29104
+          ],
+          [
+            79,
+            28927
+          ],
+          [
+            325,
+            24285
+          ],
+          [
+            258,
+            22599
+          ],
+          [
+            97,
+            22296
+          ],
+          [
+            35,
+            21992
+          ]
+        ],
+        "rare_once": 6
+      },
+      {
+        "level": 2,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 498,
+        "most_common": [
+          [
+            197,
+            40312
+          ],
+          [
+            202,
+            36400
+          ],
+          [
+            332,
+            28779
+          ],
+          [
+            446,
+            24830
+          ],
+          [
+            321,
+            24113
+          ],
+          [
+            286,
+            24013
+          ],
+          [
+            11,
+            22463
+          ],
+          [
+            183,
+            22212
+          ],
+          [
+            58,
+            21780
+          ],
+          [
+            460,
+            21608
+          ]
+        ],
+        "rare_once": 4
+      },
+      {
+        "level": 3,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 489,
+        "most_common": [
+          [
+            503,
+            40301
+          ],
+          [
+            236,
+            29570
+          ],
+          [
+            308,
+            25868
+          ],
+          [
+            114,
+            22065
+          ],
+          [
+            130,
+            21601
+          ],
+          [
+            498,
+            21514
+          ],
+          [
+            457,
+            20878
+          ],
+          [
+            191,
+            20780
+          ],
+          [
+            401,
+            18346
+          ],
+          [
+            395,
+            18140
+          ]
+        ],
+        "rare_once": 7
+      },
+      {
+        "level": 4,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 443,
+        "most_common": [
+          [
+            71,
+            48972
+          ],
+          [
+            467,
+            45785
+          ],
+          [
+            498,
+            45331
+          ],
+          [
+            456,
+            21541
+          ],
+          [
+            186,
+            19644
+          ],
+          [
+            138,
+            16125
+          ],
+          [
+            501,
+            16016
+          ],
+          [
+            316,
+            15930
+          ],
+          [
+            424,
+            15062
+          ],
+          [
+            353,
+            15049
+          ]
+        ],
+        "rare_once": 4
+      },
+      {
+        "level": 5,
+        "observed_min_id": 0,
+        "observed_max_id": 511,
+        "observed_vocabulary": 391,
+        "most_common": [
+          [
+            367,
+            88403
+          ],
+          [
+            350,
+            32496
+          ],
+          [
+            241,
+            30562
+          ],
+          [
+            168,
+            24428
+          ],
+          [
+            409,
+            18679
+          ],
+          [
+            437,
+            18281
+          ],
+          [
+            38,
+            16256
+          ],
+          [
+            186,
+            14532
+          ],
+          [
+            428,
+            13422
+          ],
+          [
+            122,
+            13373
+          ]
+        ],
+        "rare_once": 6
+      }
+    ]
+  },
+  "token_canonical_layout": "[L, T]",
+  "special_tokens": {
+    "evidence": [],
+    "conclusion": "No dataset-provided declaration located; RVQ values are codebook IDs, and model special IDs must be added later without collision"
+  },
+  "rvq_vae": {
+    "checkpoint_candidates": [
+      "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth"
+    ],
+    "code_config_candidates": [],
+    "checkpoint_inspection": [
+      {
+        "path": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "epoch",
+          "global_iter",
+          "model_state_dict",
+          "optimizer_state_dict",
+          "loss",
+          "recon_loss",
+          "global_loss",
+          "vel_loss",
+          "commit_loss",
+          "best_loss",
+          "config",
+          "scheduler"
+        ],
+        "tensor_count_shown": 159,
+        "tensor_inventory": [
+          {
+            "key": "model_state_dict.encoder.encoder.0.weight",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.0.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.2.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.2.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.2.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.2.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.2.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.3.weight",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.3.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.5.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.5.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.5.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.5.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.5.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.6.weight",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.6.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.8.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.8.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.8.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.8.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.8.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.9.weight",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.9.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.11.weight",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.11.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.11.running_mean",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.11.running_var",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.encoder.encoder.11.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.0.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.0.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.0.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.1.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.1.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.1.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.2.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.2.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.2.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.3.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.3.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.3.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.4.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.4.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.4.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.5.embedding",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.5.cluster_size",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.rvq.quantizers.5.embedding_avg",
+            "shape": [
+              256,
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.0.weight",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.0.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.2.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.2.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.2.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.2.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.2.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.3.weight",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.3.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.5.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.5.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.5.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.5.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.5.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.6.weight",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.6.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.8.weight",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.8.bias",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.8.running_mean",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.8.running_var",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.8.num_batches_tracked",
+            "shape": [],
+            "dtype": "torch.int64"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.9.weight",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "model_state_dict.decoder.decoder.9.bias",
+            "shape": [
+              668
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.6.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.6.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.6.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.7.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.7.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.7.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.10.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.10.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.10.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.11.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.11.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.11.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.14.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.14.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.14.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.15.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.15.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.15.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.16.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.16.exp_avg",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.16.exp_avg_sq",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.17.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.17.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.17.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.18.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.18.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.18.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.19.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.19.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.19.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.20.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.20.exp_avg",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.20.exp_avg_sq",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.21.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.21.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.21.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.22.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.22.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.22.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.23.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.23.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.23.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.24.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.24.exp_avg",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.24.exp_avg_sq",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.25.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.25.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.25.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.26.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.26.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.26.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.27.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.27.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.27.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.28.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.28.exp_avg",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.28.exp_avg_sq",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.29.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.29.exp_avg",
+            "shape": [
+              668
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.29.exp_avg_sq",
+            "shape": [
+              668
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              512,
+              668,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.8.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.8.exp_avg",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.8.exp_avg_sq",
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.9.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.9.exp_avg",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.9.exp_avg_sq",
+            "shape": [
+              512
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.12.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.12.exp_avg",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.12.exp_avg_sq",
+            "shape": [
+              256,
+              512,
+              3
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.13.step",
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.13.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          },
+          {
+            "key": "optimizer_state_dict.state.13.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32"
+          }
+        ]
+      }
+    ],
+    "codebook_tensor_evidence": [
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.0.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.0.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.0.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.1.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.1.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.1.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.2.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.2.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.2.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.3.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.3.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.3.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.4.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.4.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.4.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.5.embedding",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.5.cluster_size",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      {
+        "checkpoint": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth",
+        "key": "model_state_dict.rvq.quantizers.5.embedding_avg",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32"
+      }
+    ]
+  },
+  "text_statistics": {
+    "sentence_unique": 12463,
+    "sentence_length": {
+      "count": 12463,
+      "mean": 6.97801492417556,
+      "median": 6.0,
+      "min": 2.0,
+      "p95": 13.0,
+      "p99": 19.0,
+      "max": 151.0
+    },
+    "gloss_unique_sequences": 12364,
+    "gloss_vocabulary_size": 5883,
+    "gloss_length": {
+      "count": 12463,
+      "mean": 4.82540319345262,
+      "median": 4.0,
+      "min": 1.0,
+      "p95": 8.0,
+      "p99": 12.0,
+      "max": 50.0
+    },
+    "motion_length": {
+      "count": 12463,
+      "mean": 431.10230281633636,
+      "median": 389.0,
+      "min": 96.0,
+      "p95": 722.0,
+      "p99": 1156.3799999999992,
+      "max": 7409.0
+    },
+    "motion_token_length": {
+      "count": 12463,
+      "mean": 108.14819866805745,
+      "median": 98.0,
+      "min": 24.0,
+      "p95": 181.0,
+      "p99": 289.3799999999992,
+      "max": 1853.0
+    }
+  },
+  "integrity": {
+    "total_examples": 12467,
+    "successfully_loaded_motion": 12463,
+    "missing_motion": 4,
+    "ambiguous_motion": 0,
+    "missing_tokens": 4,
+    "token_parse_or_load_errors": 4,
+    "invalid_shapes": 4,
+    "scan_errors": 0,
+    "non_numeric_samples": 0,
+    "empty_arrays": 0,
+    "nan_samples": 0,
+    "inf_samples": 0,
+    "zero_only_samples": 0,
+    "missing_sentence": 0,
+    "missing_gloss": 0,
+    "duplicate_ids": 0,
+    "metadata_mismatches": 0,
+    "observed_motion_ndim": 2,
+    "observed_feature_dim": 668,
+    "full_numeric_scan": true
+  },
+  "actionable_integrity_after_quarantine": {
+    "missing_motion": 0,
+    "ambiguous_motion": 0,
+    "missing_tokens": 0,
+    "token_parse_or_load_errors": 0,
+    "invalid_shapes": 0,
+    "scan_errors": 0,
+    "non_numeric_samples": 0,
+    "empty_arrays": 0,
+    "nan_samples": 0,
+    "inf_samples": 0,
+    "zero_only_samples": 0,
+    "missing_sentence": 0,
+    "missing_gloss": 0
+  },
+  "splits": {
+    "counts": {
+      "train": 9970,
+      "test": 1247,
+      "validation": 1246
+    },
+    "exact_duplicate_leakage": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    },
+    "near_duplicate_threshold": 0.9,
+    "near_duplicate_pairs": 37
+  },
+  "configuration": {
+    "seed": 42,
+    "kaggle_input": "/kaggle/input",
+    "data_root": null,
+    "output_dir": "/kaggle/working/motion_s_phase1",
+    "id_column": null,
+    "sentence_column": null,
+    "gloss_column": null,
+    "token_columns": null,
+    "rvq_checkpoint": null,
+    "approved_quarantine_ids": [
+      "1361291",
+      "25980",
+      "32734",
+      "4808283"
+    ],
+    "token_layout": null,
+    "train_fraction": 0.8,
+    "validation_fraction": 0.1,
+    "test_fraction": 0.1,
+    "near_duplicate_threshold": 0.9,
+    "near_duplicate_max_features": 50000,
+    "examples_to_show": 5,
+    "numeric_chunk_rows": 4096,
+    "full_numeric_scan": true,
+    "require_rvq_checkpoint": false,
+    "require_motion_tokens": true,
+    "strict_shape_validation": true
+  }
+}

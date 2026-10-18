@@ -1,0 +1,15 @@
+{
+  "correlations_with_absolute_error_spearman": {
+    "gloss_word_count": 0.2692638935978654,
+    "true_length": 0.2476013863647133,
+    "oov_gloss_terms": 0.09329582714151323,
+    "phase3_gloss_f1": -0.24391118509631352
+  },
+  "short_half_mean_signed_error": 8.084905660377359,
+  "long_half_mean_signed_error": -13.059308072487644,
+  "training_bounds": [
+    24,
+    469
+  ],
+  "calibration_selected": true
+}

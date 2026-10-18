@@ -1,0 +1,37 @@
+{
+  "rvq_levels": 6,
+  "codebook_sizes": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "PAD_ID": 512,
+  "BOS_ID": 513,
+  "EOS_ID": 514,
+  "motion_vocab_size": 515,
+  "level_order": [
+    "base_tokens",
+    "residual_1",
+    "residual_2",
+    "residual_3",
+    "residual_4",
+    "residual_5"
+  ],
+  "d_model": 256,
+  "d_level": 64,
+  "num_heads": 8,
+  "decoder_layers": 4,
+  "ffn_dimension": 1024,
+  "dropout": 0.0,
+  "positional_capacity": 512,
+  "gloss_encoder": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/best_model",
+  "gloss_tokenizer": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3/tokenizer",
+  "gloss_encoder_frozen": true,
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "checkpoint_contents": "all state_dict entries except frozen gloss_encoder.*; reload Phase-3 encoder first",
+  "phase3_model_config_sha256": "19d0cb630d1fc250df46f81009f6bb6040469b0d15899eeb299a6ac7c88bb423",
+  "phase3_tokenizer_config_sha256": "1e4193fa87a97b848742f2ffb63b3f253dd4c28725164ded3a4babc2aeb1782b"
+}

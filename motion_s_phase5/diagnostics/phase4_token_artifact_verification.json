@@ -1,0 +1,384 @@
+{
+  "oracle": {
+    "path": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_oracle_tokens.npz",
+    "samples": 1243,
+    "packed_shape": [
+      6,
+      303039
+    ],
+    "random_checks": [
+      {
+        "sample_id": "5726344",
+        "shape": [
+          6,
+          81
+        ],
+        "min": 0,
+        "max": 506
+      },
+      {
+        "sample_id": "5261824",
+        "shape": [
+          6,
+          117
+        ],
+        "min": 6,
+        "max": 506
+      },
+      {
+        "sample_id": "246213",
+        "shape": [
+          6,
+          211
+        ],
+        "min": 3,
+        "max": 506
+      },
+      {
+        "sample_id": "8282132",
+        "shape": [
+          6,
+          224
+        ],
+        "min": 6,
+        "max": 506
+      },
+      {
+        "sample_id": "6058775",
+        "shape": [
+          6,
+          124
+        ],
+        "min": 5,
+        "max": 506
+      },
+      {
+        "sample_id": "5672008",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 10,
+        "max": 511
+      },
+      {
+        "sample_id": "22471",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 32,
+        "max": 498
+      },
+      {
+        "sample_id": "1936385",
+        "shape": [
+          6,
+          60
+        ],
+        "min": 0,
+        "max": 506
+      },
+      {
+        "sample_id": "4500044",
+        "shape": [
+          6,
+          119
+        ],
+        "min": 3,
+        "max": 506
+      },
+      {
+        "sample_id": "3591704",
+        "shape": [
+          6,
+          170
+        ],
+        "min": 6,
+        "max": 504
+      },
+      {
+        "sample_id": "313527",
+        "shape": [
+          6,
+          229
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "1908959",
+        "shape": [
+          6,
+          146
+        ],
+        "min": 2,
+        "max": 508
+      },
+      {
+        "sample_id": "319104",
+        "shape": [
+          6,
+          238
+        ],
+        "min": 6,
+        "max": 506
+      },
+      {
+        "sample_id": "6107395",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 48,
+        "max": 454
+      },
+      {
+        "sample_id": "1977716",
+        "shape": [
+          6,
+          102
+        ],
+        "min": 5,
+        "max": 502
+      },
+      {
+        "sample_id": "54068",
+        "shape": [
+          6,
+          100
+        ],
+        "min": 4,
+        "max": 507
+      },
+      {
+        "sample_id": "5757798",
+        "shape": [
+          6,
+          114
+        ],
+        "min": 6,
+        "max": 507
+      },
+      {
+        "sample_id": "314759",
+        "shape": [
+          6,
+          456
+        ],
+        "min": 6,
+        "max": 505
+      },
+      {
+        "sample_id": "5022698",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 9,
+        "max": 508
+      },
+      {
+        "sample_id": "3653700",
+        "shape": [
+          6,
+          157
+        ],
+        "min": 64,
+        "max": 452
+      }
+    ],
+    "passed": true
+  },
+  "end2end": {
+    "path": "/kaggle/input/datasets/adibraian/phase-4c/motion_s_phase4/results/test_end2end_tokens.npz",
+    "samples": 1243,
+    "packed_shape": [
+      6,
+      301626
+    ],
+    "random_checks": [
+      {
+        "sample_id": "4499493",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 2,
+        "max": 506
+      },
+      {
+        "sample_id": "1306579",
+        "shape": [
+          6,
+          78
+        ],
+        "min": 2,
+        "max": 503
+      },
+      {
+        "sample_id": "2663434",
+        "shape": [
+          6,
+          79
+        ],
+        "min": 2,
+        "max": 506
+      },
+      {
+        "sample_id": "321049",
+        "shape": [
+          6,
+          274
+        ],
+        "min": 9,
+        "max": 498
+      },
+      {
+        "sample_id": "3915836",
+        "shape": [
+          6,
+          64
+        ],
+        "min": 3,
+        "max": 507
+      },
+      {
+        "sample_id": "3120892",
+        "shape": [
+          6,
+          180
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "319184",
+        "shape": [
+          6,
+          255
+        ],
+        "min": 6,
+        "max": 506
+      },
+      {
+        "sample_id": "6094712",
+        "shape": [
+          6,
+          258
+        ],
+        "min": 0,
+        "max": 509
+      },
+      {
+        "sample_id": "3422349",
+        "shape": [
+          6,
+          101
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "254323",
+        "shape": [
+          6,
+          160
+        ],
+        "min": 9,
+        "max": 502
+      },
+      {
+        "sample_id": "298315",
+        "shape": [
+          6,
+          280
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "56379",
+        "shape": [
+          6,
+          221
+        ],
+        "min": 1,
+        "max": 509
+      },
+      {
+        "sample_id": "2663084",
+        "shape": [
+          6,
+          82
+        ],
+        "min": 6,
+        "max": 509
+      },
+      {
+        "sample_id": "8409570",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 32,
+        "max": 503
+      },
+      {
+        "sample_id": "3910569",
+        "shape": [
+          6,
+          284
+        ],
+        "min": 0,
+        "max": 506
+      },
+      {
+        "sample_id": "1563274",
+        "shape": [
+          6,
+          512
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "2641776",
+        "shape": [
+          6,
+          421
+        ],
+        "min": 6,
+        "max": 503
+      },
+      {
+        "sample_id": "6038257",
+        "shape": [
+          6,
+          228
+        ],
+        "min": 3,
+        "max": 508
+      },
+      {
+        "sample_id": "4494022",
+        "shape": [
+          6,
+          225
+        ],
+        "min": 38,
+        "max": 498
+      },
+      {
+        "sample_id": "303261",
+        "shape": [
+          6,
+          141
+        ],
+        "min": 3,
+        "max": 503
+      }
+    ],
+    "passed": true
+  }
+}

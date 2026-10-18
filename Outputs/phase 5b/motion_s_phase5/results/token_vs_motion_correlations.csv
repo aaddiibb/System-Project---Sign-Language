@@ -1,0 +1,8 @@
+analysis,first_column,second_column,Spearman_correlation
+oracle token accuracy vs time-normalized motion error,oracle_aligned_token_accuracy,oracle_motion_time_normalized_raw_MAE,-0.4081524542477294
+end-to-end token accuracy vs time-normalized motion error,end2end_aligned_token_accuracy,end2end_motion_time_normalized_raw_MAE,-0.43440185901843453
+oracle edit distance vs motion error,oracle_mean_normalized_edit_distance,oracle_motion_time_normalized_raw_MAE,0.5155623100434958
+end-to-end edit distance vs motion error,end2end_mean_normalized_edit_distance,end2end_motion_time_normalized_raw_MAE,0.5009022584810764
+oracle token-length error vs frame-length error,oracle_length_error,oracle_motion_frame_error,0.999992325366441
+end-to-end token-length error vs frame-length error,end2end_length_error,end2end_motion_frame_error,0.9999934641486888
+Phase-3 gloss F1 vs end-to-end motion error,lexical_token_f1,end2end_motion_time_normalized_raw_MAE,-0.16508608647940595

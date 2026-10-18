@@ -1,0 +1,40 @@
+{
+  "source_checkpoint": "/kaggle/input/datasets/adibraian/phase-7-output/motion_s_phase7/models/sc_point/best_model.pt",
+  "source_phase7_sha256": "56f00536688b2adcc98fe12dec8e1bada89c836507a47f1571f8319d781b6816",
+  "architecture_changed": false,
+  "phase3_changed": false,
+  "length_model_changed": false,
+  "self_conditioning": {
+    "mode": "two-pass synchronized point corruption",
+    "p_max": 0.15
+  },
+  "token": {
+    "model": "dynamics_persistence",
+    "aligned_token_accuracy": 0.1636179540602173,
+    "micro_token_accuracy": 0.15889413995944768,
+    "normalized_token_edit_distance": 0.8295994146289694,
+    "per_level_accuracy": [
+      0.2006491453946912,
+      0.1998858984341873,
+      0.15297319384159927,
+      0.1363744998419539,
+      0.12955153458896454,
+      0.1339305676552899
+    ]
+  },
+  "motion": {
+    "model": "dynamics_persistence",
+    "normalized_feature_mae": 0.8310940798644759,
+    "time_normalized_raw_mae": 1.6816556453704834,
+    "velocity_mae": 0.08844226265171796,
+    "motion_variance": 0.47518573046884977,
+    "collapse_rate": 0.499597747385358,
+    "repetition_score": 0.4744586999170265,
+    "extreme_motion_rate": 0.02252614641995173,
+    "duration_mae_frames": 1.5221238938053097,
+    "signed_duration_bias": 1.5221238938053097
+  },
+  "selected_epoch": 4,
+  "lambda_velocity": 0.1,
+  "lambda_persistence": 0.02
+}

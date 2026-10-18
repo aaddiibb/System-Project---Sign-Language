@@ -1,0 +1,13 @@
+{
+  "predictions": 1247,
+  "empty_predictions": 0,
+  "flagged_predictions": 238,
+  "unknown_generated_tokens": 270,
+  "unknown_generated_token_rate": 0.04643962848297214,
+  "known_gloss_like_token_rate": 0.9535603715170279,
+  "possible_english_filler_or_source_copy_predictions": 41,
+  "malformed_or_unusual_symbol_predictions": 3,
+  "max_generated_token_count": 16,
+  "max_consecutive_token_repeat": 14,
+  "max_consecutive_pattern_repeat": 14
+}

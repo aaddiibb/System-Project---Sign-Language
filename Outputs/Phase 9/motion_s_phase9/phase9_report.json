@@ -1,0 +1,157 @@
+{
+  "phase": "Phase 9 - Gloss-aligned concatenative motion synthesis",
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d",
+  "motion_metric_reference": "rvq_reconstruction_proxy",
+  "structure_diagnostics": {
+    "shared_prefix_tokens_first_word_HE_median": 0.0,
+    "shared_prefix_tokens_first_word_ME_median": 0.0,
+    "shared_prefix_tokens_first_word_SHE_median": 0.0,
+    "shared_prefix_tokens_random_pairs_median": 0.0,
+    "copy_previous_token_accuracy_validation": [
+      0.6301044634377968,
+      0.34922858966574816,
+      0.22827051515576105,
+      0.1490822474429032,
+      0.1065807295315492,
+      0.09036632260675977
+    ],
+    "duration_lexicon_train_residual_mae_tokens": 1.1045382313355099
+  },
+  "selection": {
+    "split": "validation only",
+    "max_ngram": 8,
+    "medoid_pool": 64,
+    "join_radius": 1,
+    "oov_fallback": "meaning",
+    "semantic_threshold": 0.6,
+    "sentence_encoder": "C:\\Users\\HP\\AppData\\Local\\Temp\\claude\\d--System-Project\\15bf8f11-97d7-4748-8c36-ab1231fe6c12\\scratchpad\\models\\all-MiniLM-L6-v2",
+    "token_ranking": [
+      "lower edit distance",
+      "higher micro accuracy"
+    ],
+    "motion_ranking": [
+      "lower collapse",
+      "lower feature MAE"
+    ],
+    "test_used": false
+  },
+  "validation_oracle_length": {
+    "model": "phase9_validation_oracle",
+    "aligned_token_accuracy": 0.43794285460351334,
+    "micro_token_accuracy": 0.43851107736034767,
+    "normalized_token_edit_distance": 0.4939475965261119,
+    "per_level_accuracy": [
+      0.7014008280073086,
+      0.5487822741675596,
+      0.4315814631212946,
+      0.3582326592603443,
+      0.30880663639377376,
+      0.2822626032118049
+    ],
+    "length_mae_tokens": 0.0,
+    "signed_length_bias_tokens": 0.0,
+    "motion_metric_reference": "rvq_reconstruction_proxy",
+    "normalized_feature_mae": 0.21224228639608175,
+    "time_normalized_raw_mae": 0.397916569676451,
+    "velocity_mae": 0.06423406926570392,
+    "motion_variance": 0.7079242042878556,
+    "collapse_rate": 0.04827031375703942,
+    "repetition_score": 0.44297175595736066,
+    "extreme_motion_rate": 0.0056315366049879325,
+    "duration_mae_frames": 0.0,
+    "signed_duration_bias": 0.0
+  },
+  "test": {
+    "phase9_oracle_length": {
+      "model": "phase9_oracle_length",
+      "aligned_token_accuracy": 0.43400508649848274,
+      "micro_token_accuracy": 0.42948825781325667,
+      "normalized_token_edit_distance": 0.49578558498465874,
+      "per_level_accuracy": [
+        0.6889097888088574,
+        0.5366181890474224,
+        0.4221223104096894,
+        0.3512027649064856,
+        0.30237341530179995,
+        0.27570307840528513
+      ],
+      "length_mae_tokens": 0.0,
+      "signed_length_bias_tokens": 0.0,
+      "motion_metric_reference": "rvq_reconstruction_proxy",
+      "normalized_feature_mae": 0.21568539585207896,
+      "time_normalized_raw_mae": 0.40425909447542907,
+      "velocity_mae": 0.0649939692104932,
+      "motion_variance": 0.7166301628930557,
+      "collapse_rate": 0.032180209171359615,
+      "repetition_score": 0.4454893222351015,
+      "extreme_motion_rate": 0.006436041834271922,
+      "duration_mae_frames": 0.0,
+      "signed_duration_bias": 0.0
+    },
+    "phase9_gt_gloss_own_length": {
+      "model": "phase9_gt_gloss_own_length",
+      "aligned_token_accuracy": 0.41925414451687154,
+      "micro_token_accuracy": 0.4129781864907962,
+      "normalized_token_edit_distance": 0.48484493826824154,
+      "per_level_accuracy": [
+        0.6605901568281393,
+        0.5134534701902683,
+        0.4037589212453362,
+        0.33771461303856454,
+        0.29320514606845943,
+        0.26914681157400955
+      ],
+      "length_mae_tokens": 2.2107803700724054,
+      "signed_length_bias_tokens": -0.3572003218020917,
+      "motion_metric_reference": "rvq_reconstruction_proxy",
+      "normalized_feature_mae": 0.21880781649344408,
+      "time_normalized_raw_mae": 0.4068797073047533,
+      "velocity_mae": 0.07272414620950735,
+      "motion_variance": 0.7165915150072444,
+      "collapse_rate": 0.032180209171359615,
+      "repetition_score": 0.44462621298599664,
+      "extreme_motion_rate": 0.006436041834271922,
+      "duration_mae_frames": 8.843121480289621,
+      "signed_duration_bias": -1.4288012872083669
+    },
+    "phase9_end2end": {
+      "model": "phase9_end2end",
+      "aligned_token_accuracy": 0.24127742083309986,
+      "micro_token_accuracy": 0.23837001552153472,
+      "normalized_token_edit_distance": 0.7059860767781214,
+      "per_level_accuracy": [
+        0.34468694516096615,
+        0.29530836487889855,
+        0.235971994238049,
+        0.2029245251415363,
+        0.1815600817393052,
+        0.16976818197045326
+      ],
+      "length_mae_tokens": 17.38938053097345,
+      "signed_length_bias_tokens": -0.917940466613033,
+      "motion_metric_reference": "rvq_reconstruction_proxy",
+      "normalized_feature_mae": 0.6232860930554707,
+      "time_normalized_raw_mae": 1.3504036868025555,
+      "velocity_mae": 0.1009806651282645,
+      "motion_variance": 0.7100201910874372,
+      "collapse_rate": 0.04585679806918745,
+      "repetition_score": 0.43793642461232835,
+      "extreme_motion_rate": 0.003218020917135961,
+      "duration_mae_frames": 69.5575221238938,
+      "signed_duration_bias": -3.671761866452132
+    }
+  },
+  "phase8_comparison_available": true,
+  "api_validation_passed": true,
+  "submission_written": false,
+  "neural_generator_used": false,
+  "semantic_motion_quality_claimed": false,
+  "skeleton_conversion_verified": false,
+  "bvh_export_verified": false,
+  "limitations": [
+    "Retrieval/concatenation cannot produce signs absent from the training data; OOV glosses use the nearest-spelled known gloss.",
+    "Exploits the corpus's concatenated-clip construction; gains may not transfer to continuously signed corpora.",
+    "Deployable accuracy is bounded by Phase-3 text-to-gloss quality.",
+    "Test split was inspected in earlier phases; Phase 9 choices used validation only."
+  ]
+}

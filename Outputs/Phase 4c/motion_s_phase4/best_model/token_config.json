@@ -1,0 +1,29 @@
+{
+  "shape": "[6,T]",
+  "rvq_levels": 6,
+  "level_order": [
+    "base_tokens",
+    "residual_1",
+    "residual_2",
+    "residual_3",
+    "residual_4",
+    "residual_5"
+  ],
+  "codebook_sizes": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "valid_ids": [
+    0,
+    511
+  ],
+  "PAD_ID": 512,
+  "BOS_ID": 513,
+  "EOS_ID": 514,
+  "motion_vocab_size": 515,
+  "supported_max_t": 512
+}

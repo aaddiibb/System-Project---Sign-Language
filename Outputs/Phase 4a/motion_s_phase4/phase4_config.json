@@ -1,0 +1,29 @@
+{
+  "phase4a_config": {
+    "seed": 42,
+    "kaggle_input": "/kaggle/input",
+    "phase1_root": null,
+    "motion_s_root": null,
+    "phase3_root": null,
+    "rvq_checkpoint": null,
+    "declared_codebook_sizes": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "declared_codebook_sizes_source": "https://huggingface.co/Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+    "output_dir": "/kaggle/working/motion_s_phase4",
+    "examples_to_show": 5,
+    "max_metadata_file_bytes": 2000000,
+    "max_checkpoint_candidates": 10
+  },
+  "resolved_paths": {
+    "phase1": "/kaggle/input/datasets/adibraian/gpt-first-phase/motion_s_phase1",
+    "motion_s": "/kaggle/input/competitions/motion-s-hierarchical-text-to-motion-generation-for-sign-language",
+    "phase3": "/kaggle/input/datasets/adibraian/phase-3/motion_s_phase3"
+  },
+  "phase1_fingerprint": "e2acdf4d6dce91775239ad50be3866dbc6f5da94d940204b62456cdb77fc4b0d"
+}

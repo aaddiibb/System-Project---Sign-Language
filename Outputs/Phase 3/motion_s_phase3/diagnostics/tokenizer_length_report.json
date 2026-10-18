@@ -1,0 +1,19 @@
+{
+  "coverage_quantile": 0.995,
+  "input": {
+    "p50": 13.0,
+    "p90": 19.0,
+    "p99": 30.0,
+    "max": 191,
+    "selected_max_length": 34,
+    "truncation_rate": 0.004613841524573721
+  },
+  "target": {
+    "p50": 12.0,
+    "p90": 19.0,
+    "p99": 32.0,
+    "max": 151,
+    "selected_max_length": 43,
+    "truncation_rate": 0.004914744232698095
+  }
+}

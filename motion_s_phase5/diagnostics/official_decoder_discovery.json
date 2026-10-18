@@ -1,0 +1,116 @@
+{
+  "official_repository": "Signvrse/Motion-S-RVQ-VAE-Tokenizer",
+  "expected_checkpoint": "rvq_vae_best.pth",
+  "all_exact_filename_candidates": [
+    "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth"
+  ],
+  "checkpoint_candidates": [
+    "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3/rvq_vae_best.pth"
+  ],
+  "checkpoint_selection_reason": "unique exact filename",
+  "exact_checkpoint_located": true,
+  "decoder_root": "/kaggle/input/models/antonygithinji/motion-s-vae-rvq/pytorch/default/3",
+  "checkpoint_sha256": "0329cf9197f3ba8088e79ce519c422b97ba118ae8046f3dc608c6d4e1904b25f",
+  "checkpoint_safe_load_error": null,
+  "checkpoint_tensor_count": 69,
+  "codebook_tensor_candidates": [
+    {
+      "key": "rvq.quantizers.0.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.0.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.1.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.1.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.2.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.2.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.3.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.3.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.4.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.4.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.5.embedding",
+      "shape": [
+        256,
+        512
+      ]
+    },
+    {
+      "key": "rvq.quantizers.5.embedding_avg",
+      "shape": [
+        256,
+        512
+      ]
+    }
+  ],
+  "provider_source_files": [],
+  "source_evidence": [],
+  "official_decoder_source_verified": false,
+  "config_files": [],
+  "normalization_files": [],
+  "readme_files": [],
+  "expected_contract_from_official_model_card_only": {
+    "num_quantizers": 6,
+    "num_embeddings": 512,
+    "latent_dim": 256,
+    "model_card_example_input_dim": 263,
+    "model_card_downsampling_ratio": 4,
+    "warning": "Model-card values are not accepted as an executable decoder contract without provider implementation/config verification."
+  }
+}

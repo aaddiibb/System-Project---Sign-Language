@@ -1,0 +1,14 @@
+{
+  "basis": "ground-truth supported test Motion-Features distribution",
+  "static_velocity_threshold_gt_percentile_1": 0.05120963267549523,
+  "static_variance_threshold_gt_percentile_1": 0.44765905187780203,
+  "extreme_minimum_threshold_gt_sample_min_percentile_0_1": -65.59299890136718,
+  "extreme_maximum_threshold_gt_sample_max_percentile_99_9": 180.38255624389657,
+  "extreme_normalized_magnitude_threshold_gt_percentile_99_9": 26.16074596786499,
+  "high_variance_feature_indices": [
+    461,
+    470,
+    488,
+    467
+  ]
+}

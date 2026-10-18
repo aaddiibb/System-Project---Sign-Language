@@ -1,0 +1,18 @@
+{
+  "decoder_contract_path": "/kaggle/working/motion_s_phase5/diagnostics/decoder_contract.json",
+  "motion_mean_path": "/kaggle/working/motion_s_phase5/diagnostics/motion_mean_668.npy",
+  "motion_std_path": "/kaggle/working/motion_s_phase5/diagnostics/motion_std_668.npy",
+  "contract_parses": true,
+  "contract_ready_for_phase5b": true,
+  "mean_shape": [
+    668
+  ],
+  "std_shape": [
+    668
+  ],
+  "mean_dtype": "float32",
+  "std_dtype": "float32",
+  "mean_finite": true,
+  "std_finite": true,
+  "passed": true
+}

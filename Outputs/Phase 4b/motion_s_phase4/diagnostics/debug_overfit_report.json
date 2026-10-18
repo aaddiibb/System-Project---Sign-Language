@@ -1,0 +1,73 @@
+{
+  "debug_samples": 32,
+  "initial_loss": 6.557528138160706,
+  "final_loss": 0.015617680037394166,
+  "loss_reduction": 0.9976183586698608,
+  "teacher_forced": {
+    "loss": 0.015617680037394166,
+    "level_losses": [
+      0.015296037774533033,
+      0.014232756104320288,
+      0.0157999936491251,
+      0.015734085347503424,
+      0.016350606456398964,
+      0.01629259530454874
+    ],
+    "overall_accuracy": 0.9998450573287884,
+    "motion_only_accuracy": 0.9998435054773083,
+    "per_level_accuracy": [
+      1.0,
+      1.0,
+      0.9996901146575767,
+      1.0,
+      0.9996901146575767,
+      0.9996901146575767
+    ],
+    "first_step_accuracy": 0.984375
+  },
+  "retry_configuration": {
+    "locked_manifest": true,
+    "epochs": 180,
+    "dropout": 0.0,
+    "micro_gate_passed": true
+  },
+  "autoregressive": {
+    "aligned_token_accuracy": 0.9896680216802168,
+    "micro_aligned_token_accuracy": 0.9870364467112953,
+    "per_level_prefix_accuracy": [
+      0.9961746891934969,
+      0.9929869301880778,
+      0.9885240675804909,
+      0.9837424290723621,
+      0.9824673254701944,
+      0.9783232387631495
+    ],
+    "length_mae": 1.8125,
+    "normalized_token_edit_distance": 0.016804788213627995,
+    "exact_sequence_match": 0.96875,
+    "eos_success_rate": 1.0,
+    "unique_generated_16_token_prefixes": 27,
+    "modal_generated_prefix_rate": 0.09375
+  },
+  "generated_token_validity": {
+    "invalid_id_rate": 0.0
+  },
+  "thresholds": {
+    "loss_reduction": 0.9,
+    "teacher_accuracy": 0.9,
+    "motion_only_accuracy": 0.9,
+    "autoregressive_aligned_accuracy": 0.7,
+    "eos_success_rate": 0.8
+  },
+  "metric_gate_passed": true,
+  "checkpoint_reload": {
+    "attempted": true,
+    "identical": true,
+    "probe_sample_id": "1223901",
+    "generated_shape": [
+      6,
+      58
+    ]
+  },
+  "passed": true
+}

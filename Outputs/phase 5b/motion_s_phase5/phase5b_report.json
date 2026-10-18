@@ -1,0 +1,162 @@
+{
+  "phase": "Phase 5B - Generated RVQ Tokens to Continuous Motion",
+  "phase5b_complete": true,
+  "decoder": {
+    "verified_phase5a_decoder": true,
+    "candidate": "Candidate B",
+    "strict_checkpoint_load": true,
+    "rvq_levels": 6,
+    "codebook_size": 512,
+    "latent_dim": 256,
+    "motion_dim": 668,
+    "temporal_upsampling": 4
+  },
+  "normalization": {
+    "type": "empirically recovered per-feature z-score",
+    "official_statistics_confirmed": false,
+    "active_dimensions": 509,
+    "near_zero_dimensions": 159
+  },
+  "coverage": {
+    "oracle_requested": 1243,
+    "oracle_decoded": 1243,
+    "end2end_requested": 1243,
+    "end2end_decoded": 1243
+  },
+  "oracle": {
+    "duration_mae_frames": 590.8744971842317,
+    "duration_mean_signed_error": 555.8173773129525,
+    "prefix_raw_mae": 1.7266686645779916,
+    "time_normalized_raw_mae": 1.9329129498000106,
+    "normalized_feature_mae": 0.9318765374160465,
+    "velocity_mae": 0.09644715433317941,
+    "mean_correlation": 0.984241928496294
+  },
+  "end2end": {
+    "duration_mae_frames": 592.1971037811746,
+    "duration_mean_signed_error": 551.2703137570394,
+    "prefix_raw_mae": 1.7707672007169155,
+    "time_normalized_raw_mae": 1.9525133182046526,
+    "normalized_feature_mae": 0.9382964489191234,
+    "velocity_mae": 0.09569861014003647,
+    "mean_correlation": 0.9840561557391114
+  },
+  "oracle_vs_end2end": [
+    {
+      "Metric": "duration MAE",
+      "Oracle": 590.8744971842317,
+      "End-to-End": 592.1971037811746,
+      "End-to-End minus Oracle": 1.3226065969429328,
+      "degradation_positive_is_worse": 1.3226065969429328
+    },
+    {
+      "Metric": "duration signed bias",
+      "Oracle": 555.8173773129525,
+      "End-to-End": 551.2703137570394,
+      "End-to-End minus Oracle": -4.547063555913155,
+      "degradation_positive_is_worse": -4.547063555913155
+    },
+    {
+      "Metric": "prefix feature MAE",
+      "Oracle": 1.7266686645779916,
+      "End-to-End": 1.7707672007169155,
+      "End-to-End minus Oracle": 0.044098536138923894,
+      "degradation_positive_is_worse": 0.044098536138923894
+    },
+    {
+      "Metric": "prefix correlation",
+      "Oracle": 0.9862849517968406,
+      "End-to-End": 0.9857918777612558,
+      "End-to-End minus Oracle": -0.0004930740355848506,
+      "degradation_positive_is_worse": 0.0004930740355848506
+    },
+    {
+      "Metric": "time-normalized MAE",
+      "Oracle": 1.9329129498000106,
+      "End-to-End": 1.9525133182046526,
+      "End-to-End minus Oracle": 0.019600368404641966,
+      "degradation_positive_is_worse": 0.019600368404641966
+    },
+    {
+      "Metric": "time-normalized correlation",
+      "Oracle": 0.984241928496294,
+      "End-to-End": 0.9840561557391114,
+      "End-to-End minus Oracle": -0.00018577275718256736,
+      "degradation_positive_is_worse": 0.00018577275718256736
+    },
+    {
+      "Metric": "normalized feature MAE",
+      "Oracle": 0.9318765374160465,
+      "End-to-End": 0.9382964489191234,
+      "End-to-End minus Oracle": 0.006419911503076969,
+      "degradation_positive_is_worse": 0.006419911503076969
+    },
+    {
+      "Metric": "velocity MAE",
+      "Oracle": 0.09644715433317941,
+      "End-to-End": 0.09569861014003647,
+      "End-to-End minus Oracle": -0.000748544193142936,
+      "degradation_positive_is_worse": -0.000748544193142936
+    }
+  ],
+  "token_vs_motion_analysis_available": true,
+  "token_vs_motion_correlations": [
+    {
+      "analysis": "oracle token accuracy vs time-normalized motion error",
+      "first_column": "oracle_aligned_token_accuracy",
+      "second_column": "oracle_motion_time_normalized_raw_MAE",
+      "Spearman_correlation": -0.4081524542477294
+    },
+    {
+      "analysis": "end-to-end token accuracy vs time-normalized motion error",
+      "first_column": "end2end_aligned_token_accuracy",
+      "second_column": "end2end_motion_time_normalized_raw_MAE",
+      "Spearman_correlation": -0.43440185901843453
+    },
+    {
+      "analysis": "oracle edit distance vs motion error",
+      "first_column": "oracle_mean_normalized_edit_distance",
+      "second_column": "oracle_motion_time_normalized_raw_MAE",
+      "Spearman_correlation": 0.5155623100434958
+    },
+    {
+      "analysis": "end-to-end edit distance vs motion error",
+      "first_column": "end2end_mean_normalized_edit_distance",
+      "second_column": "end2end_motion_time_normalized_raw_MAE",
+      "Spearman_correlation": 0.5009022584810764
+    },
+    {
+      "analysis": "oracle token-length error vs frame-length error",
+      "first_column": "oracle_length_error",
+      "second_column": "oracle_motion_frame_error",
+      "Spearman_correlation": 0.999992325366441
+    },
+    {
+      "analysis": "end-to-end token-length error vs frame-length error",
+      "first_column": "end2end_length_error",
+      "second_column": "end2end_motion_frame_error",
+      "Spearman_correlation": 0.9999934641486888
+    },
+    {
+      "analysis": "Phase-3 gloss F1 vs end-to-end motion error",
+      "first_column": "lexical_token_f1",
+      "second_column": "end2end_motion_time_normalized_raw_MAE",
+      "Spearman_correlation": -0.16508608647940595
+    }
+  ],
+  "decoder_failures": {
+    "invalid_tokens": 0,
+    "nan": 0,
+    "inf": 0,
+    "shape_failures": 0
+  },
+  "motion_collapse_samples": {
+    "oracle": 728,
+    "end2end": 723
+  },
+  "extreme_motion_samples": {
+    "oracle": 43,
+    "end2end": 45
+  },
+  "ready_for_phase5c": true
+}

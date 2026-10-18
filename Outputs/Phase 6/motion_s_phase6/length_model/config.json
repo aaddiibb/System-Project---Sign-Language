@@ -1,0 +1,37 @@
+{
+  "architecture": "frozen T5 encoder (512) -> masked mean -> Linear(512,256) -> GELU -> Dropout(0.1) -> Linear(256,1)",
+  "target": "log1p(motion_token_length)",
+  "loss": "SmoothL1Loss",
+  "optimizer": "AdamW",
+  "encoder_frozen": true,
+  "motion_model_frozen": true,
+  "best_epoch": 48,
+  "selection": "lowest validation GT-gloss token MAE",
+  "training_bounds": [
+    24,
+    469
+  ],
+  "calibration": {
+    "fit_split": "validation only",
+    "slope": 0.9845130283361572,
+    "intercept": 3.376678766272256,
+    "selected": true
+  },
+  "config": {
+    "seed": 42,
+    "kaggle_input": "/kaggle/input",
+    "kaggle_working": "/kaggle/working",
+    "output_dir": "/kaggle/working/motion_s_phase6",
+    "supported_max_t": 512,
+    "encoder_batch_size": 64,
+    "length_batch_size": 256,
+    "length_learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "max_epochs": 50,
+    "early_stopping_patience": 6,
+    "dropout": 0.1,
+    "baseline_reproduction_samples": 8,
+    "generate_validation_tokens": true,
+    "near_zero_std": 1e-06
+  }
+}
